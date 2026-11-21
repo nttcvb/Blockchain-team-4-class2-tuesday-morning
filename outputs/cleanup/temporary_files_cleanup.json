@@ -1,0 +1,27 @@
+[
+  {
+    "Path": "D:\\New folder\\luna-ust-sim\\.guide_work",
+    "Files": 28,
+    "Bytes": 4607910.0
+  },
+  {
+    "Path": "D:\\New folder\\luna-ust-sim\\.pytest_cache",
+    "Files": 4,
+    "Bytes": 651.0
+  },
+  {
+    "Path": "D:\\New folder\\luna-ust-sim\\__pycache__",
+    "Files": 1,
+    "Bytes": 49512.0
+  },
+  {
+    "Path": "D:\\New folder\\luna-ust-sim\\luna_sim\\__pycache__",
+    "Files": 12,
+    "Bytes": 304060.0
+  },
+  {
+    "Path": "D:\\New folder\\luna-ust-sim\\tests\\__pycache__",
+    "Files": 1,
+    "Bytes": 48228.0
+  }
+]

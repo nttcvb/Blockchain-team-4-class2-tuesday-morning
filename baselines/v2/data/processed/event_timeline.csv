@@ -1,0 +1,9 @@
+﻿time_utc,event,source,certainty,model_effect
+2022-05-06T00:15:00Z,Khởi tạo từ epoch 00:14,epoch_state_fig10,snapshot,Khởi tạo mô hình
+2022-05-07T00:00:00Z,Cửa sổ hành động hai ví A/B,wallet_A_B transactions,observed window,Cú sốc có điều kiện theo từng giao dịch
+2022-05-08T00:00:00Z,TFL mua UST + LFG stablecoin,"JS Held, bảng mua ngày 08",daily aggregate,"Ý định mua gộp, bị chặn bởi quỹ/market"
+2022-05-09T00:00:00Z,LFG mở tranche BTC cho Jump,"JS Held, ngày 09",early bound,Quỹ sớm/muộn là giả định
+2022-05-10T00:00:00Z,LFG mở tranche BTC còn lại,"JS Held, ngày 10",early bound,Không cộng chuyển nội bộ thành quỹ mới
+2022-05-11T12:00:00Z,Tăng virtual pool/capacity,Terra Market + native swap volume,approximate,Pool ×4 trong replay; không tái lập từng block
+2022-05-13T02:00:00Z,Đóng native/Anchor trong replay,Mốc native cuối trong dữ liệu,approximate simplifying assumption,"Đóng phục vụ Anchor cùng native là giả định thô, không mô hình các lần restart"
+2022-05-16T00:00:00Z,Bắt đầu tail không giải ngân mới,Experiment protocol,counterfactual test,"Giữ BTC cuối cửa sổ, tiếp tục bảy ngày"

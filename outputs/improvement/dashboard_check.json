@@ -1,0 +1,119 @@
+{
+  "started_utc": "2026-10-11T14:05:14.734287+00:00",
+  "finished_utc": "2026-10-11T14:05:44.943031+00:00",
+  "command": "python outputs/improvement/dashboard_check.py --selector saved_presentation_loads_exact_completed_result_without_simulating and all --minimum-cases 1",
+  "test_selector": "saved_presentation_loads_exact_completed_result_without_simulating and all",
+  "expected_minimum_cases": 1,
+  "pytest_exit_code": 0,
+  "cases": [
+    {
+      "nodeid": "tests/test_dashboard.py::test_saved_presentation_loads_exact_completed_result_without_simulating[all]",
+      "outcome": "passed",
+      "duration_seconds": 26.761033899965696
+    }
+  ],
+  "errors": [],
+  "simulation_calls_allowed": 0,
+  "optimizer_calls_allowed": 0,
+  "scope": "Saved result load, exact rendered charts, all-period metrics, date filters, and refusal of invalid artifacts; legacy policy simulations excluded.",
+  "before_sha256": {
+    "app.py": "1a3668179f02f3a196bed6fa9cd50f2a9350cdf386e4356e2e1ecb325c740a42",
+    "tests/test_dashboard.py": "61fae8fb400a0d25b0e3a5553b89fbad3c882ed849038bdc4b40c4db3b58afa4",
+    "luna_sim/__init__.py": "9fa989fd1cf1da61a4b2a2f193811435c12600e018dbb34e2b0844a6935863ec",
+    "luna_sim/audit.py": "992f9395c63ad2f4803be7a4020030607eec832ca90157fb42617780b0313985",
+    "luna_sim/calibrate.py": "7aa5ff3453a39669c321657894a352194bdfba6b8b797f0b629c6bd34c4de583",
+    "luna_sim/cli.py": "288166563159e2cf3531d7e6247a0e7d29f0ce6926642483ffaa1006e83f75c0",
+    "luna_sim/config.py": "610f1ed6cc25301c1ca22f9305c736e6f94229f25cfc3619ba447875c1f13662",
+    "luna_sim/data.py": "6331fab0b4e19fef798a6c6f593c3468ff36a17e5427e30c1dce3823a8b378e9",
+    "luna_sim/diagnostics.py": "60a4b92ec2e460532afec257216f0506a5670b0cc48747ba5543def320e412f4",
+    "luna_sim/engine.py": "beb3754a2c3a485bca3195d54850c4f865b005c9a7d1b882b43fadfbd97a3bd7",
+    "luna_sim/experiments.py": "58246914f34a98522238bd2bd82db0aa20a80ccdc6f28b5c5fa405823c81d6ad",
+    "luna_sim/improvements.py": "5486dbcc7b95bd56851270ab6e83833f27f89e727d40f16b4a38da924f671906",
+    "luna_sim/metrics.py": "c71e0345ca304bc22d025e15cd13a07c9d244b3659a1a2f2761508e67a1d48b9",
+    "luna_sim/reconstruction.py": "73a1be48bfc691dcc1c730fe99481222f617c0c3b7373306b606a42d7c3a4ac3",
+    "luna_sim/reconstruction_validation.py": "fe1ab7c19be0b6ae25e0847cb2675e66f65befb720b4ecd0f41f68b7cb9562db",
+    "luna_sim/report.py": "d6d89345bdc9cbede4bb249e720252a5942b1c3c01df3bfcc70121d7911ae554",
+    "outputs/calibration/parameters.json": "e4eb252705717487d2ca79791140a0a2a7d093643c197623b867e7b47bef8e30",
+    "outputs/calibration/parameters_full_fit.json": "47042d85cb91b0a2c0fa070136e654af6d3ce320fe91cdd08d5d71781134e6a6",
+    "outputs/calibration/trajectory_all.parquet": "1f7bf2a2dccf80f993f7bcd4fb71857d3161b2162b83258ff93a08874b8429c5",
+    "outputs/calibration/trajectory_train.parquet": "acd31b302faabeb4320a10a685bdc929fdea1a9521ffe36d1614489fe98eabe9",
+    "outputs/calibration/report_all.json": "1505e89723aa8d8b669b9b48dec8c50178245787eb4d12e4d3e8a65857e145f1",
+    "outputs/calibration/report_train.json": "d1c42e6a81ae67a56f4887a949dbcaefb30d4319dec1eeeda988b20b89c5c20e",
+    "outputs/calibration/config_all.json": "48ed42f018406356f01289202a89996db4f3871673ad7d17968adf339feab3e6",
+    "outputs/calibration/config_train.json": "e8856419d178517e79842a1a951c198df993072baa23a5a1e8279aa601988375",
+    "outputs/calibration/calibration_status_all.json": "bf2dd03dc5ba5a60bc3dc915044741c299f6190003efdeff1ab0eadee31c83ac",
+    "outputs/calibration/calibration_status_train.json": "d0cc6e9b5d2996aa38e7e56504f95ad5939c019cd27b8e106e121919979576e0",
+    "outputs/reconstruction/manifest.json": "3270e0342502cfd6b6a05b53e9187ae72c0119c1eef397a779856b2add3dbb9e"
+  },
+  "after_sha256": {
+    "app.py": "1a3668179f02f3a196bed6fa9cd50f2a9350cdf386e4356e2e1ecb325c740a42",
+    "tests/test_dashboard.py": "61fae8fb400a0d25b0e3a5553b89fbad3c882ed849038bdc4b40c4db3b58afa4",
+    "luna_sim/__init__.py": "9fa989fd1cf1da61a4b2a2f193811435c12600e018dbb34e2b0844a6935863ec",
+    "luna_sim/audit.py": "992f9395c63ad2f4803be7a4020030607eec832ca90157fb42617780b0313985",
+    "luna_sim/calibrate.py": "7aa5ff3453a39669c321657894a352194bdfba6b8b797f0b629c6bd34c4de583",
+    "luna_sim/cli.py": "288166563159e2cf3531d7e6247a0e7d29f0ce6926642483ffaa1006e83f75c0",
+    "luna_sim/config.py": "610f1ed6cc25301c1ca22f9305c736e6f94229f25cfc3619ba447875c1f13662",
+    "luna_sim/data.py": "6331fab0b4e19fef798a6c6f593c3468ff36a17e5427e30c1dce3823a8b378e9",
+    "luna_sim/diagnostics.py": "60a4b92ec2e460532afec257216f0506a5670b0cc48747ba5543def320e412f4",
+    "luna_sim/engine.py": "beb3754a2c3a485bca3195d54850c4f865b005c9a7d1b882b43fadfbd97a3bd7",
+    "luna_sim/experiments.py": "58246914f34a98522238bd2bd82db0aa20a80ccdc6f28b5c5fa405823c81d6ad",
+    "luna_sim/improvements.py": "5486dbcc7b95bd56851270ab6e83833f27f89e727d40f16b4a38da924f671906",
+    "luna_sim/metrics.py": "c71e0345ca304bc22d025e15cd13a07c9d244b3659a1a2f2761508e67a1d48b9",
+    "luna_sim/reconstruction.py": "73a1be48bfc691dcc1c730fe99481222f617c0c3b7373306b606a42d7c3a4ac3",
+    "luna_sim/reconstruction_validation.py": "fe1ab7c19be0b6ae25e0847cb2675e66f65befb720b4ecd0f41f68b7cb9562db",
+    "luna_sim/report.py": "d6d89345bdc9cbede4bb249e720252a5942b1c3c01df3bfcc70121d7911ae554",
+    "outputs/calibration/parameters.json": "e4eb252705717487d2ca79791140a0a2a7d093643c197623b867e7b47bef8e30",
+    "outputs/calibration/parameters_full_fit.json": "47042d85cb91b0a2c0fa070136e654af6d3ce320fe91cdd08d5d71781134e6a6",
+    "outputs/calibration/trajectory_all.parquet": "1f7bf2a2dccf80f993f7bcd4fb71857d3161b2162b83258ff93a08874b8429c5",
+    "outputs/calibration/trajectory_train.parquet": "acd31b302faabeb4320a10a685bdc929fdea1a9521ffe36d1614489fe98eabe9",
+    "outputs/calibration/report_all.json": "1505e89723aa8d8b669b9b48dec8c50178245787eb4d12e4d3e8a65857e145f1",
+    "outputs/calibration/report_train.json": "d1c42e6a81ae67a56f4887a949dbcaefb30d4319dec1eeeda988b20b89c5c20e",
+    "outputs/calibration/config_all.json": "48ed42f018406356f01289202a89996db4f3871673ad7d17968adf339feab3e6",
+    "outputs/calibration/config_train.json": "e8856419d178517e79842a1a951c198df993072baa23a5a1e8279aa601988375",
+    "outputs/calibration/calibration_status_all.json": "bf2dd03dc5ba5a60bc3dc915044741c299f6190003efdeff1ab0eadee31c83ac",
+    "outputs/calibration/calibration_status_train.json": "d0cc6e9b5d2996aa38e7e56504f95ad5939c019cd27b8e106e121919979576e0",
+    "outputs/reconstruction/manifest.json": "3270e0342502cfd6b6a05b53e9187ae72c0119c1eef397a779856b2add3dbb9e"
+  },
+  "inputs_unchanged": true,
+  "previous_completed_verification": {
+    "status": "complete",
+    "unified_exec_session_id": 39637,
+    "authoritative_terminal_exit_code": 0,
+    "command": "python -m pytest tests/test_dashboard.py -k saved_presentation -q",
+    "passed": 6,
+    "deselected_legacy_policy_tests": 2,
+    "runtime_seconds": 136.64,
+    "app_sha256": "fb68ba7140ed12e3371f027ff4e5330f355f0df70dc8591f30f3e806b9fa060b",
+    "tests_sha256": "9f779e6e15f20c63f3c2b2069728e0e6c9d82b111affbd1ab887cd985a41bfde",
+    "qualification": "Six cases passed on the first UI revision. Subsequent app edits only clear stale presentation identity before refusal and wrap metric cards on narrow screens. Same-session refusal is verified separately against the final UI; browser appearance is verified by root.",
+    "simulation_calls_allowed": 0,
+    "optimizer_calls_allowed": 0,
+    "cases": [
+      {
+        "name": "saved all fit, exact four actual/saved chart traces, UTC, honest 1/6 gates",
+        "outcome": "passed"
+      },
+      {
+        "name": "saved train fit switch, exact four chart traces and saved metrics",
+        "outcome": "passed"
+      },
+      {
+        "name": "both date windows filter exact arrays without changing full-period metrics",
+        "outcome": "passed"
+      },
+      {
+        "name": "missing published trajectory refuses, no fallback simulation",
+        "outcome": "passed"
+      },
+      {
+        "name": "tampered published trajectory refuses, no fallback simulation",
+        "outcome": "passed"
+      },
+      {
+        "name": "stale execution identity refuses, no fallback simulation",
+        "outcome": "passed"
+      }
+    ]
+  },
+  "status": "complete"
+}

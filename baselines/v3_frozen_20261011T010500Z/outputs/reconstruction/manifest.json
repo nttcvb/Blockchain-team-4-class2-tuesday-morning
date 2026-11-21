@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "created_utc": "2026-10-11T00:45:33.721659+00:00",
+  "provenance": {
+    "source_sha256": {
+      "calibrate.py": "7aa5ff3453a39669c321657894a352194bdfba6b8b797f0b629c6bd34c4de583",
+      "engine.py": "0a89a9e690c7998d8fadaa1756466b6195b67219483320403672a441cd95f7ea",
+      "config.py": "610f1ed6cc25301c1ca22f9305c736e6f94229f25cfc3619ba447875c1f13662",
+      "data.py": "6331fab0b4e19fef798a6c6f593c3468ff36a17e5427e30c1dce3823a8b378e9",
+      "metrics.py": "c71e0345ca304bc22d025e15cd13a07c9d244b3659a1a2f2761508e67a1d48b9",
+      "data/sources.json": "2c9e3680e5c64a745090f6dc8ad0eecc2440d3da9ca6a9684e1a8b5894cbd359",
+      "data/external/btc_usdt_minute.parquet": "86ccb9bbcd9523d53c40b239f205f8628d5ad1780fe89e35ada46b2d5a218f3a",
+      "data/external/btc_metadata.json": "fa24b2bcfed763e896f071deda59f8269f01939ab04af9c4300a60f00f0f9856",
+      "audit.py": "992f9395c63ad2f4803be7a4020030607eec832ca90157fb42617780b0313985",
+      "reconstruction.py": "73a1be48bfc691dcc1c730fe99481222f617c0c3b7373306b606a42d7c3a4ac3",
+      "reconstruction_validation.py": "fe1ab7c19be0b6ae25e0847cb2675e66f65befb720b4ecd0f41f68b7cb9562db"
+    },
+    "target_sha256": "89e7a53d8d795cb48706657306144ee54e4306d667265520127cb31a3d59e4a9",
+    "group_sha256": "c606efc0cece8a608a4c1db7838854340069b37787da061d4c86f0c4a73f9865",
+    "group_observation_coverage": {
+      "raw_start_utc": "2022-05-06T00:00:01+00:00",
+      "raw_end_utc": "2022-05-13T23:59:39+00:00",
+      "first_bucket_start_utc": "2022-05-06T00:00:00+00:00",
+      "last_bucket_end_utc": "2022-05-14T00:00:00+00:00",
+      "bucket_convention": "Right-end timestamp; preserve cumulative withdrawals before first target; censor after the last observed bucket."
+    },
+    "historical_checks_current": true,
+    "inputs_sha256": {
+      "outputs/calibration/report_train.json": "a4c4966b29b1fad04fac1ca71698400cdad3cd45f23281bf797b6c9af574852d",
+      "outputs/calibration/calibration_status_train.json": "5f8096d6cc659f4205b2dd046560ce2ad0effa57d50f7776189b793405e626fa",
+      "outputs/calibration/config_train.json": "afba0a46384f920232867045cc38094e777097459bcc459ae19bb7709fe2eed9",
+      "outputs/calibration/trajectory_train.parquet": "b8883efbb9221ba41d4ee365d265d350b77006cca1a370b2fb1bd67028af4c2e",
+      "outputs/calibration/parameters.json": "23a85a5e73731f82a3b48cba07013729061d94a843044c95ac59ef311d33e28b",
+      "outputs/calibration/runs/20261010T142316556295Z_train/report.json": "a4c4966b29b1fad04fac1ca71698400cdad3cd45f23281bf797b6c9af574852d",
+      "outputs/calibration/runs/20261010T142316556295Z_train/execution.json": "5f8096d6cc659f4205b2dd046560ce2ad0effa57d50f7776189b793405e626fa",
+      "outputs/calibration/runs/20261010T142316556295Z_train/trajectory.parquet": "b8883efbb9221ba41d4ee365d265d350b77006cca1a370b2fb1bd67028af4c2e",
+      "outputs/calibration/report_all.json": "150a571ea8cca240d8ed50988e637065dcc6e05d764f93d5e091c6657b228970",
+      "outputs/calibration/calibration_status_all.json": "0ac3ea33f381a47834426655a7008b0ba89fd0a1febc10b21ff9f39a69a46e7c",
+      "outputs/calibration/config_all.json": "b5b50361d49f5aa350174fab13f796b329be3918715821a4fb866af17f6fef94",
+      "outputs/calibration/trajectory_all.parquet": "7f2f26f2ad57f9c475fff76bec6e7a33ad66c7e48e981d4e4443cf226d29d614",
+      "outputs/calibration/parameters_full_fit.json": "a91435ad8ecf942e8b493dc7f229405982d60ebdef883c6e98e5a5bad5268be8",
+      "outputs/calibration/runs/20261010T142315780978Z_all/report.json": "150a571ea8cca240d8ed50988e637065dcc6e05d764f93d5e091c6657b228970",
+      "outputs/calibration/runs/20261010T142315780978Z_all/execution.json": "0ac3ea33f381a47834426655a7008b0ba89fd0a1febc10b21ff9f39a69a46e7c",
+      "outputs/calibration/runs/20261010T142315780978Z_all/trajectory.parquet": "7f2f26f2ad57f9c475fff76bec6e7a33ad66c7e48e981d4e4443cf226d29d614",
+      "outputs/reconstruction/validation/manifest.json": "0342a960a828a7b835d362cf20dd1f0725f67c819e20c257353589ddec757724",
+      "outputs/reconstruction/validation/timestep_check.json": "2bbbbba43a3303f454231a8fb6f63af6fb4e2a0ad476d0ffd6e69f2145c87344",
+      "outputs/reconstruction/validation/runs.csv": "8b5514063df7cf0b45949cba72e8858cdc9f08f3ff864a8ed3f584a4bf96e6f5",
+      "outputs/reconstruction/validation/bands.parquet": "606ffbea14605b73fae8973f07572f586c6f57593c6c8d21f741485d1ea2324b"
+    }
+  },
+  "calibration_checks": {
+    "train": {
+      "run_id": "20261010T142316556295Z_train",
+      "objective_recomputed": 1.480936636964211,
+      "rows": 959,
+      "fit_rows": 479,
+      "target_sha256": "2c40681185b861f0089c46f9e1357ce13a9078e1a41bc796e7af4186c642bd9d",
+      "group_sha256": "2afb74d2625aa24b15894c5ab5df41a29ca7f5aa7b7bba996d0eb2e1e0ae089d",
+      "report_metrics_recomputed": true,
+      "financial_metrics_recomputed": true,
+      "published_trajectory_matches_run_archive": true,
+      "fidelity": {
+        "metric_split": "validation",
+        "gates": {
+          "ust_mae": false,
+          "deposit_nrmse": true,
+          "luna_price_log_rmse": false,
+          "luna_supply_log_rmse": false,
+          "group_mae_max": false,
+          "depeg_error_hours": true
+        },
+        "passes_all": false,
+        "is_parameter_holdout": true
+      }
+    },
+    "all": {
+      "run_id": "20261010T142315780978Z_all",
+      "objective_recomputed": 7.711416118569907,
+      "rows": 959,
+      "fit_rows": 959,
+      "target_sha256": "89e7a53d8d795cb48706657306144ee54e4306d667265520127cb31a3d59e4a9",
+      "group_sha256": "c606efc0cece8a608a4c1db7838854340069b37787da061d4c86f0c4a73f9865",
+      "report_metrics_recomputed": true,
+      "financial_metrics_recomputed": true,
+      "published_trajectory_matches_run_archive": true,
+      "fidelity": {
+        "metric_split": "all",
+        "gates": {
+          "ust_mae": false,
+          "deposit_nrmse": false,
+          "luna_price_log_rmse": false,
+          "luna_supply_log_rmse": false,
+          "group_mae_max": true,
+          "depeg_error_hours": true
+        },
+        "passes_all": false,
+        "is_parameter_holdout": false
+      }
+    }
+  },
+  "fidelity": {
+    "full_fit_passes_all": false,
+    "parameter_holdout_passes_all": false,
+    "seed_count": 20,
+    "seed_runs_passing_all_gates": 0
+  },
+  "artifacts_sha256": {
+    "RECONSTRUCTION_VI.md": "c6268f3d268687cae02b4c050301fb83be2af04ba9263d7c719093ff910ce60c",
+    "reconstruction.html": "86db26ba062958531c034bbe7d45376eda1f4a3c550367f73a9afc4a84517176"
+  }
+}

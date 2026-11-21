@@ -1,0 +1,111 @@
+{
+  "fit_split": "all",
+  "objective_version": "prices_stocks_groups_onset_native_volume_fee_v2",
+  "calls": 198,
+  "objective": 8.601105867202968,
+  "runtime_seconds": 321.841877400002,
+  "train": {
+    "ust_mae": 0.030115967486780353,
+    "deposit_nrmse": 0.1422520545510085,
+    "luna_price_log_rmse": 0.08569638060759081,
+    "luna_supply_log_rmse": 0.003713884531916321,
+    "group_mae_max": 0.16427300283698382,
+    "depeg_error_hours": 47.25,
+    "gates": {
+      "ust_mae": true,
+      "deposit_nrmse": false,
+      "luna_price_log_rmse": true,
+      "luna_supply_log_rmse": true,
+      "group_mae_max": false,
+      "depeg_error_hours": false
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 1470749338.30292,
+    "native_ust_simulated_total": 788917843.1467819,
+    "native_daily_nrmse": 0.23335483010517974,
+    "native_fee_mae": 0.014658238620017446
+  },
+  "validation": {
+    "ust_mae": 0.15153438318569218,
+    "deposit_nrmse": 0.06748585916301418,
+    "luna_price_log_rmse": 1.2144689172806693,
+    "luna_supply_log_rmse": 0.593059119042594,
+    "group_mae_max": 0.18151631184597494,
+    "depeg_error_hours": 47.25,
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": true,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": false,
+      "group_mae_max": false,
+      "depeg_error_hours": false
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 6019922142.086021,
+    "native_ust_simulated_total": 5710117762.973978,
+    "native_daily_nrmse": 0.42314560916850613,
+    "native_fee_mae": 0.1409293617570785
+  },
+  "all": {
+    "ust_mae": 0.0908884800368092,
+    "deposit_nrmse": 0.11129608367845766,
+    "luna_price_log_rmse": 0.8613387705456296,
+    "luna_supply_log_rmse": 0.4195829199066918,
+    "group_mae_max": 0.14482730265843943,
+    "depeg_error_hours": 47.25,
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": false,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": true,
+      "group_mae_max": true,
+      "depeg_error_hours": false
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 7490671480.388943,
+    "native_ust_simulated_total": 6499035606.12076,
+    "native_daily_nrmse": 0.3030741936165176,
+    "native_fee_mae": 0.05740627509870998
+  },
+  "financial_metrics": {
+    "classification": "Không đạt tiêu chí cứu vãn",
+    "rescued": false,
+    "peg_hours_longest": 0.0,
+    "operational_hours_longest": 0.0,
+    "stress_tail_verified": false,
+    "support_spent_usd": 2091480810.000009,
+    "support_remaining_usd": 1095327219.7037332,
+    "btc_sold": 44961.56500803531,
+    "tfl_own_contribution_usd": 613616889.0,
+    "final_ust_price": 0.020401334751371996,
+    "min_ust_price": 0.00024830035948820447,
+    "final_luna_price": 0.0003877694118459575,
+    "final_luna_supply": 2726003350927.6445,
+    "final_anchor_deposits": 1648334859.0402477,
+    "final_withdraw_queue": 1599182381.3162417,
+    "depositor_loss_fraction": 0.20684622943362618,
+    "withdraw_service_ratio": 0.8861226803207084,
+    "native_service_ratio": 1.0,
+    "max_accounting_errors": {
+      "ust_error": 0.0001068115234375,
+      "luna_error": 0.00048828125,
+      "usd_error": 0.0002899169921875,
+      "claim_error": 2.47955322265625e-05
+    },
+    "historical_execution_gap_usd": 7.152557373046875e-07,
+    "qualification": "Conditional financial experiment; validator security and exact exchange/Jump execution are outside the model.",
+    "runtime_seconds": 2.605195200012531,
+    "engine": "cadcad",
+    "seed": 42,
+    "engine_source_sha256": "407acc5169a441b950684987291cf4b5bf809f8f74f1b5f1bd9a2fc6427d82b7"
+  },
+  "limitations": [
+    "Price/depth parameters are not uniquely identified by the supplied extracts.",
+    "Historical intervention replay is resource constrained, not exact Jump/TFL execution.",
+    "If any fidelity gate fails, policy results are exploratory and not historical causal evidence."
+  ],
+  "validation_is_parameter_holdout": false,
+  "structural_validation_is_independent": false,
+  "reference_funding_timing": "early",
+  "source_sha256": "407acc5169a441b950684987291cf4b5bf809f8f74f1b5f1bd9a2fc6427d82b7"
+}

@@ -1,0 +1,1264 @@
+
+--- PDF page 1 ---
+1 
+ 
+ 
+ 
+November 9, 2022 
+Page 1 of 1 
+ 
+ 
+ 
+ 
+ 
+Analysis – 
+Terraform Labs’ 
+and Luna 
+Foundation Guard’s 
+Defense of the UST 
+Price Peg 
+November 9, 2022 
+ 
+
+--- PDF page 2 ---
+2 
+ 
+ 
+ 
+November 9, 2022 
+Page 2 of 16 
+ 
+ 
+ 
+ 
+ 
+Table of Contents 
+I. Introduction ................................................................................................................................................................ 3 
+II. Executive Summary ..................................................................................................................................................... 3 
+III. Background.................................................................................................................................................................. 6 
+IV. Information Considered .............................................................................................................................................. 7 
+V. Findings ....................................................................................................................................................................... 7 
+VIII. Conclusion ................................................................................................................................................................. 15 
+ 
+Exhibits .......................................................................................................................................................................................... 18 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+--- PDF page 3 ---
+3 
+ 
+ 
+ 
+November 9, 2022 
+Page 3 of 16 
+ 
+ 
+ 
+ 
+ 
+I. Introduction 
+ 
+1. JS Held (“JSH” or “we”) has been retained by Dentons US LLP (“Counsel”) to conduct an analysis of trading 
+and blockchain records and the efforts of Terraform Labs Pte. Ltd. (“TFL”), and Luna Foundation Guard 
+(“LFG”), to defend the price of UST
+1 from May 8 th to 12 th, when there was a large market selloff of the 
+stablecoin.  
+ 
+2. JSH has provided financial analyses and expert testimony in various matters, including cryptocurrency, for 
+over twenty years. See Exhibit 1 (Curriculum Vitae of Boris Richard). For its services related to this matter, 
+JSH was compensated by TFL at an hourly rate of $800 per hour. JSH’s compensation is not contingent upon 
+its conclusions or opinions expressed herein, nor upon the outcome of any matter in which these conclusions 
+are presented. 
+ 
+3. Utilizing our forensic investigative experience and knowledge of blockchain analytics and cryptocurrency 
+exchanges, JSH determined the specific transactions and assets that LFG and TFL utilized between May 8
+th 
+and May 12th, 2022, in TFL/LFG’s attempts to defend and support the 1:1 peg of TFL’s stablecoin UST to the 
+U.S. Dollar (“UST Price Peg”). We relied upon various types of quantitative and qualitative information, which 
+included on-chain data; analyzing trading records that we independently obtained from Binance, KuCoin, and 
+Bitfinex; and consultations with the TFL business. At the time, TFL managed and executed accounting, 
+finance, and tax -related operations and responsibilities of LFG along with any other administrative and 
+operational functions LFG requested, pursuant to a master services agreement executed at the beginning of 
+2022.
+2 
+ 
+4. At Counsel’s request, our analysis evaluated the following activity: 
+ 
+(1) The specific transactions conducted by TFL and LFG to defend the UST Price Peg from May 8 to May 12.  
+ 
+(2) The accounting of LFG’s assets on May 7 through May 16, as reflected in the series of tweets posted by 
+LFG on May 16, 2022 (“LFG May 16 Tweets”).  
+ 
+(3) The accuracy of the descriptions of the transactions undertaken by LFG to defend the UST Price Peg, as 
+recounted in LFG’s May 16 Tweets, and an assessment of any deviations. 
+ 
+II. Executive Summary 
+ 
+5. Our review of trading records and blockchain data revealed that: 
+ 
+(1) From May 8 to May 12, 2022, LFG and TFL used the following assets to defend the UST Price Peg. 
+ 
+ On May 8th, LFG directly sold into Curve Finance UST + 3Pool Metapool 26,281,671 USDT3 
+and 23,555,590 USDC4 from its reserves to buy 50,200,071 UST.5 
+ 
+1 This report refers to what are now known as “USTC” and “LUNC” as “UST” and “LUNA”, respectively. 
+2 Exchange information from OKX, Bittrex, and Huobi were not included in this report as API limitations prevented the retrieval  of data for 
+the relevant date ranges. 
+3 USDT (Tether) is a cryptocurrency stablecoin pegged to the U.S. dollar. 
+4 USDC (USD Coin) is a cryptocurrency stablecoin, tokenized and backed by the U.S. dollar.   
+5 See Exhibit 2. 
+
+--- PDF page 4 ---
+4 
+ 
+ 
+ 
+November 9, 2022 
+Page 4 of 16 
+ 
+ 
+ 
+ 
+ 
+ 
+ On May 9th, LFG transferred a total of 52,189 BTC 6 from its reserves to Jump Trading for 
+Jump to purchase UST.7 
+ 
+ We analyzed TFL’s trade activity by reviewing (1) the total amount of UST purchased and 
+(2) the net amount of UST purchased:
+8 
+ 
+• Total amount of UST Purchased (“Total Basis”) - From May 8th through May 10th, 
+TFL purchased a total of 1,901,559,334 UST through its cryptocurrency exchange 
+accounts (Binance, KuCoin, and Bitfinex) as well as through its TFL curve bots 1 
+and 2. These purchases had the contemporaneous market value of 
+$1,773,199,279 U.S. dollars.  
+ 
+• Net amount of UST Purchased (“Net Basis”) - From May 8th through May 10th, TFL 
+purchased net total of 1,464,738,304 UST through its cryptocurrency exchange 
+accounts (Binance, KuCoin, and Bitfinex)
+9 as well as through its TFL curve bots 1 
+and 2. These purchases had the contemporaneous market value of 
+$1,375,600,151 U.S. dollars.10 
+ 
+Also, on May 10, TFL received a total of 33,206 BTC from LFG as a reimbursement for a 
+portion of the assets TFL spent defending the peg.  LFG transferred 28,206 BTC t o TFL’s 
+Binance account
+11 and Jump transferred 5,000 BTC to the same account (313 BTC that 
+had not been used was returned to LFG’s wallet12). The total amount of 33,206 BTC had 
+the contemporaneous market value of $1,030,427,532 U.S. dollars.  All of the BT C was 
+transferred to the same TFL Binance account defending the peg and were commingled 
+with the other digital assets in the account.  Assets and trades were not segregated.  
+ 
+From May 8 to May 10, based on the total UST purchased, TFL spent $742,771,747 U .S. 
+dollars more than it received from LFG to purchase UST in defense of the UST Price Peg. 
+For the same period, using a total net amount of UST purchased, TFL spent $345,172,619 
+U.S. dollars more than it received from LFG to purchase UST in defense of the  UST Price 
+Peg. 
+ 
+ Additionally, we analyzed TFL’s trade activity by reviewing (1) the total amount of LUNA 
+purchased and (2) the net amount of LUNA purchased: 
+ 
+• Total amount of LUNA Purchased - From May 8th through May 11th, TFL purchased 
+ 
+6 Bitcoin (BTC) 
+7 See Exhibit 3. Jump Trading has not provided TFL with any records of its trades.  
+8 JSH conducted its analysis in this manner to determine (1) the direct impact of how TFL’s purchases of UST had in the market, and (2) 
+TFL’s trade strategy along with its peg defense.   
+9 During this period, TFL also sold smaller amounts of UST and LUNA for other purposes, so this report presents both the gross and net 
+amounts of UST and LUNA purchased.  
+10 The net sales of UST resulted in the following UST coin purchase: ETH, BTC, LUNA, BUSD, BNB, ATOM, SOL, DOT, AAVE, MATIC, SNX , YFI, 
+USDT, ANC. 
+11 See Exhibit 3. 
+12 TFL transferred the 313 BTC to LFGs wallet: bc1q9d4ywgfnd8h43da5tpcxcn6ajv590cg6d3tg6axemvljvt2k76zs50tv4q.  
+
+--- PDF page 5 ---
+5 
+ 
+ 
+ 
+November 9, 2022 
+Page 5 of 16 
+ 
+ 
+ 
+ 
+ 
+a total of 23,053,022 LUNA through its cryptocurrency exchange accounts 
+(Binance, KuCoin, and Bitfinex). These purchases had the contemporaneous 
+market value of $1,001,864,982 U.S. dollars.  
+ 
+• Net amount of LUNA Purchased - From May 8th through May 11th, TFL purchased 
+net total of 7,780,065 LUNA through its cryptocurrency exchange accounts 
+(Binance, KuCoin, and Bitfinex). These purchases had the contemporaneous 
+market value of $268,444,270 U.S. dollars.
+13 
+ 
+From May 8 to May 11, based on the total LUNA purchased, TFL spent $1,001,864,982 
+U.S. dollars more than it received from LFG to purchase LUNA to defend the network from 
+a governance attack. For the same period, using a total net  amount of LUNA purchased, 
+TFL spent $268,444,270 U.S. dollars more than it received from LFG to purchase LUNA to 
+defend the network from a governance attack. 
+ 
+ In total, TFL spent $1,744,636,729 U.S. dollars on a total purchase basis or $613,616,889 
+U.S dollars on a net purchase basis of its own in defense of the UST price peg.  
+ 
+(2) The LFG May 16 Tweets provided an accurate accounting of LFG’s assets balances. 
+ 
+ LFG (through TFL and Jump’s purchases on LFG’s behalf) used approximately 80,000 BTC, 
+26,281,671 USDT, and 23,555,590 USDC in t he LFG Reserve to purchase the UST 
+stablecoin and to defend the peg. 
+  
+ We confirmed that the LFG balances on May 7
+th and May 16th, as reported in the LFG May 
+16 Tweets, are accurate. 
+ 
+  
+ 
+(3) The peg defense transactions recounted in the LFG May 16 Tweets included estimates instead of actual 
+transaction data, but the use of these estimates did not affect the accuracy of the reported LFG 
+balances.  
+ 
+ 
+13 The net sales of LUNA resulted in the following LUNA coin purchase: USDT, BTC, Ethereum (ETH), USD, Binance USD (BUSD), Binance 
+Coin (BNB), UST, EURO. 
+
+
+--- PDF page 6 ---
+6 
+ 
+ 
+ 
+November 9, 2022 
+Page 6 of 16 
+ 
+ 
+ 
+ 
+ 
+ Each of LFG’s May 16 Tweets about the details of the UST Price Peg defense operations 
+are accurate, except for Tweets #6 and #7, which were based on estimate values.  
+ 
+ Tweet #6 listed the amount of UST LFG purchased as 1,164,018,521 UST. 
+ 
+o The reported number was an estimate of UST that had been calcu lated 
+as follows:  
+ 
+The 33,206 BTC that LFG transferred to TFL was multiplied by an average 
+estimated BTC price of $29,663 which equaled $984,989,578 U.S. dollars. 
+ 
+Then, the amount of $984,989,578 U.S. dollars was divided by the 
+average UST price of $0.84 6197513 resulting in the 1,164,018,521 UST 
+used in the Tweet. 
+ 
+ Tweet #7 reported that 883,525,674 UST was swapped to 221,021,746 LUNA to prevent 
+a possible governance attack. 
+  
+o The estimate in the number of UST derives from the estimate in Tweet 
+#6. The actual amount of LUNA is 220,694,577. The net difference is a 
+small amount of LUNA staked to prevent a potential governance attack 
+that did not involve UST/LUNA swaps. 
+ 
+ This estimated amount did not affect our analysis and confirmation that the beginning 
+and ending balances of the LFG reserves were correct.  
+ 
+o Jump transferred 1,515,689,462 UST to TFL on behalf of LFG.  
+o TFL purchases combined with Jump’s transferred amount of UST equaled 
+an estimated 2,601,740,975 UST.  
+o TFL transferred 1,796,182,310 UST to LFG.  
+o These transferred 1,796,182,310 UST, when added to LFG’s original 
+balance of 697,344 UST and the 50,200,071 UST that LFG converted from 
+USDT + USDC equals the ending balance of 1,847,079,725 UST. 
+ 
+III. Background  
+ 
+6. Terra Ecosystem. TFL supported the development of the Terra blockchain. LFG, a non -profit organization 
+headquartered in Singapore, was established to act as a decentralized UST Reserve to support the pegged 
+price of UST.
+14 Terra is a decentralized, open-source public blockchain built to support a suite of fiat-pegged, 
+algorithmic stablecoins. 15 Terra relied upon a dual token system: TerraUSD ( UST) was an decentralized 
+algorithmic stablecoin value-pegged to the US Dollar. UST could be used as a standalone token or in 
+conjunction with  LUNA ( Terra's native non -stablecoin cryptocurrency) for the purposes of staking, 
+governance, and reserves. LUNA operated as a stabilization mechanism to maintain the 1:1 UST price peg for 
+Terra’s stablecoin by minting and burning tokens.  
+ 
+ 
+14 https://lfg.org/missionandvision/ 
+15 https://lfg.org/missionandvision/ 
+
+--- PDF page 7 ---
+7 
+ 
+ 
+ 
+November 9, 2022 
+Page 7 of 16 
+ 
+ 
+ 
+ 
+ 
+7. How TerraUSD (“UST”) Works. TerraUSD (UST) is pegged to the price of a US dollar ($1 USD) and that peg is 
+maintained by an arbitrage mechanism tied to LUNA. As an algorithmic stablecoin with a value pegged to a 
+fiat currency via an arbitrage mechanism, the UST token has no guaranteed reserve support. Instead, the 
+creation of UST is facilitated by burning LUNA tokens. To mint 1 TerraUSD, one must burn $1 worth of LUNA. 
+Simply put, $1 USD worth of LUNA can be burned to mint 1 UST, and 1 UST can be burned to mint $1 USD 
+worth of LUNA. The price of LUNA is not fixed and can fluctuate. The UST peg to the US dollar is designed to 
+be algorithmically achieved by means of regulating its supply and demand, specifically through the actions 
+of arbitrageurs looking to make profits whenever UST might fall below or rise above $1 USD. Transactionally, 
+when the price of UST dropped below $1 USD, it  became attractive to buy UST at a price below $1 USD, 
+convert 1 UST into $1 USD worth of LUNA and sell it, realizing a profit. Thus, arbitrageurs would push UST 
+back up to parity by burning UST (reducing its supply) and minting LUNA, and vice versa whenev er UST 
+exceeds $1 USD.  
+ 
+8. Luna Foundation Guard, TFL, and UST Peg Defense . LFG acted to ensure the stability of UST’s peg. It was 
+determined that LFG could utilize crypto assets, including bitcoin (BTC), to provide additional protection 
+against UST’s peg falling below the 1:1 USD peg, in particular, by means of buying UST on centralized 
+cryptocurrency exchanges with BTC, or with other stablecoins (e.g., buying UST with Tether (USDT) or USDC, 
+into which BTC would have been swapped first).  LUNA's value is not fixed, and, by design, users are financially 
+incentivized to arbitrage LUNA and UST. Although the market price of UST fluctuated on May 7, on May 8, 
+2022, there was a significant drop in the market price of UST, and TFL began defending the peg by buying 
+UST in the open market. Additionally, at TFL’s request, Jump Trading also purchased UST using funds provided 
+by LFG.  
+ 
+IV. Information Considered 
+ 
+9. We relied upon various types of quantitative and qualitative information, including on-chain data; TFL and LFG 
+trading records JSH obtained directly from the exchanges; and consultations with the TFL business. 
+ 
+10. The work performed is not an attest engagement as defined by the rules of the American Institute of Certified 
+Public Accountants (“AICPA”), but rather conforms to the AICPA Statement on Standards for Forensic 
+Services No. 1 (“SSFS No. 1”). 
+ 
+11. The opinions presented in this report are based on information and documents available as of the  date of 
+this report. The opinions are based on a standard of reasonable certainty.  
+ 
+V. Findings 
+ 
+12. On May 7th, prior to the UST depegging, LFG had a total reserve of 80,395 BTC.16 Over the next few days, this 
+reserve was allocated to Jump and TFL to purchase UST in the open market to support the UST price and 
+defend its 1:1 USD peg.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+16 Rounded. 
+
+--- PDF page 8 ---
+8 
+ 
+ 
+ 
+November 9, 2022 
+Page 8 of 16 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+13. TFL maintained certain balances in its Binance exchange account in BTC, ETH, BNB, USDT, BUSD, LUNA and 
+UST as of May 8, 2022. These balances are reflected in the Table below. 
+        
+Coin Balance Beginning May 8th 
+BTC 4,742.51 
+ETH 761.32 
+BNB 63,810.89 
+USDT 177,429,599.14 
+LUNA 732,341.09 
+UST 796,368,008.78 
+ 
+1. From May 8 to May 12, 2022, LFG and TFL used the following assets to defend the UST Price Peg. 
+ 
+May 8th: LFG Sold 26,281,671 USDT and 23,555,590 USDC for 50,200,071 UST 
+ 
+14. As described above, on May 7, 2022, there was a significant drop in the market price of UST. In response, 
+LFG and TFL began defending the peg on May 8 by deploying crypto assets to buy UST and LUNA in the open 
+market. 
+ 
+15. Initially, LFG sold 26,281,671 USDT and 23,555,590 USDC to buy 50,200,071 UST as depicted in the table 
+below. JSH confirmed these transactions using blockchain explorers including Etherscan and Terra Finder.
+17 
+ 
+ 
+     Source: Etherscan and Terra Finder 
+ 
+16. On May 8, 2022, LFG made the above purchase of UST through the following steps:18 
+ 
+(1) Step 1: LFG converts USDT to UST -   
+26,281,671 USDT are transferred from LFG Reserve 
+0xad41bd1cf3fd753017ef5c0da8df31a3074ea1ea  to LFG address 
+0xe3011271416f3a827E25D5251d34A56d83446159.  
+~159 sends them to 0xCEAF7747579696A2F0bb206a14210e3c9e6fB269 (Curve UST 
+metapool), which exchanges USDT for Wormhole UST via Curve 3pool  
+0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7, which sends 26,495,232 Wormhole 
+ 
+17 See Exhibit 2. 
+18 The Wormhole bridge facilitates transfers of tokens across multiple chains, including Ethereum, Solana, Terra, BNB Chain, 
+Aurora, Polygon, Avalanche, Oasis, and Fantom. 
+Timestamp 
+(UTC)
+Asset 
+Type
+Controlling 
+Entity Wallet Address
+Direction 
+(In/Out) Amount
+5/8/2022 2:12 USDT LFG 0x803c172c3202ab7d32159839306e335db745b025 Out 26, 281,671  
+5/8/2022 2:19 USDC LFG 0x803c172c3202ab7d32159839306e335db745b025 Out 23,555,590 
+5/8/2022 2:38 UST Terra terra1gr0xesnseevzt3h4nxr64sh5gk4dwrwgszx3nw In 50,200,071 
+
+--- PDF page 9 ---
+9 
+ 
+ 
+ 
+November 9, 2022 
+Page 9 of 16 
+ 
+ 
+ 
+ 
+ 
+UST back to ~159. 
+ 
+(2) Step 2: LFG converts USDC to UST – 
+23,555,590 USDC are transferred from ~1ea to LFG address 
+0xe3011271416f3a827E25D5251d34A56d83446159 
+~159 sends them to 0xCEAF7747579696A2F0bb206a14210e3c9e6fB269 (Curve UST 
+metapool), which exchanges USDT for Wormhole UST via Curve 3pool  
+0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7, which sends 23,704,838 UST back to 
+~159. 
+ 
+(3) Step 3: Converted UST is transferred to LFG address –  
+ ~159 sends UST to terra10nmmwe8r3g99a9newtqa7a75xfgs2e8z87r2sf via UST 
+Wormhole portal.  
+  
+On the Terra blockchain, on May 8, 2022, 
+terra1cymh5ywgn4azak74h4gsrnakqgel4y9ssersvx sends 50,200,071.081424 UST to 
+terra1gr0xesnseevzt3h4nxr64sh5gk4dwrwgszx3nw. (~svx received 50,200,071 UST from 
+terra10nmmwe8r3g99a9newtqa7a75xfgs2e8z87r2sf which is a wormhole token bridge 
+for Terra on the Terra side.) 
+ 
+From May 8
+th through May 10th: TFL Purchases 1,901,559,334 UST on a Total Basis / 1,464,738,304 UST on a 
+Net Basis to defend the UST price peg.19 
+ 
+17. Using its Binance, KuCoin, and Bitfinex cryptocurrency trading accounts, TFL began purchasing UST in the 
+open market on May 8, 2022 and continued to do so through May 10, 2022.
+20  Utilizing the aforementioned 
+Total Basis and Net Basis methodology, TFL purchased a total of 1,514,667,392 UST, and 1,077,846,362 UST, 
+respectively. JSH confir med these purchases through data received directly from the cryptocurrency 
+exchange APIs.   
+ 
+18. Additionally, TFL purchased UST utilizing the following 2 TFL accounts: 
+ 
+1. TFL curve bot 1 : 0xE88080c85b11DBf4DD772fc6dE6dDB73de76BfdC, which was funded by 
+TFL using  its Binance account and another TFL account 
+(0x61f2f664fec20a2fc1d55409cfc85e1baeb943e2) using USDT. TFL exchanged USDT for 
+wrapped UST WUST using the UST+3Pool on Curve.fi and exchanged for USDT. 
+ 
+TFL purchased 277,888,825 UST using 276,000,000 USDT.
+21 
+ 
+2. TFL curve bot 2 : 0x6b671B51258dB0316Dd89BC0075D6113488Be5E8, which was funded 
+through TFL's staking of the ethereum derivative (bETH) in the Anchor protocol.  TFL moved 
+bETH from Anchor to Curve and exchanged to ETH and subsequently to USDT.  TFL then 
+swapped the obtained ETH for USDT using the Curve.fi USDT/WBTC/WETH pool. 
+ 
+ 
+19 See Exhibit 5. 
+20 May 8, 2022, 2:00:03 AM through May 10, 2022, 11:58 AM.  
+21 TFL began this set of transactions late in the evening on May 7th and concluded on May 8th.  As such, this transaction has been 
+considered a May 8th transaction. 
+
+--- PDF page 10 ---
+10 
+ 
+ 
+ 
+November 9, 2022 
+Page 10 of 16 
+ 
+ 
+ 
+ 
+ 
+TFL purchased 109,003,117 UST using 108,644,140 USDT. 
+ 
+19. The below  table combines the UST purchase activity within the Binance, KuCoin, and Bitfinex cryptocurrency 
+trading accounts with the purchases using TFLs curve bot accounts broken down by day showing both the 
+Total Basis and Net Basis. 
+ 
+ 
+ Source: Binance Exchange API, Bitfinex Exchange API, KuCoin Exchange API.  USD Equivalent based on 
+hourly pricing from cryptocompare.com         
+ 
+Between May 9th and May 10th: LFG Transferred 52,189 BTC to Jump Trading, and 28,206 BTC to 
+TFL, for the purpose of buying UST and defending the UST Price Peg.22 
+ 
+20. On May 9th, LFG sent a total of 52,189 BTC to Jump (bc1qlyfrxkwp2x g39cd6usx6aw45u5rlcgl3sygu2w), in a 
+series of on-chain transfers. The BTC transferred was to be used by Jump to purchase UST in the open market.   
+ 
+ 
+Source: BitInfoCharts.com 
+ 
+21. Jump later transferred 5,000 BTC to the TFL Binance cryptocurrency exchange account on May 10. 
+ 
+22. Separately, Jump transferred 1,515,689,462 UST to TFL on May 11 both via on-chain transactions and internally 
+on Binance. TFL then transferred these UST coins to LFG’s blockchain address. The following chart displays both 
+the off-chain and on-chain transfers from Jump to TFL. The off-chain transfers occurred via Binance. 
+  
+ 
+Source: Binance Exchange API and Terra Finder 
+ 
+ 
+22 See Exhibit 3. 
+Timestamp 
+(UTC)
+Asset 
+Type
+Controlling 
+Entity Wallet Address
+Direction 
+(In/Out) Amount
+5/9/2022 3:45 BTC LFG bc1q0wgz9gt8tyac5ct94czvyuu4v264fclrxlq8su4s2kk6u8nmwy9swjp6t7 Out 22,189                
+5/9/2022 3:45 BTC Jump bc1qlyfrxkwp2xg39cd6usx6aw45u5rlcgl3sygu2w In 22,189                
+5/9/2022 18:42 BTC LFG bc1qwuwyt0q83gr4cvawgdwdqeum0y2mfkx44hlzd7ke2syg3vddql8scn63rm Out 30,000                
+5/9/2022 18:42 BTC Jump bc1qlyfrxkwp2xg39cd6usx6aw45u5rlcgl3sygu2w In 30,000                
+Timestamp 
+(UTC)
+Asset 
+Type
+Controlling 
+Entity From Transaction ID Wallet Address
+Direction 
+(In/Out) Amount
+5/10/2022 2:42 UST TFL Jump 105880695932 (Internal) In 878                       
+5/11/2022 13:54 UST TFL Jump 105881369092 (Internal) In 100,000,000       
+5/11/2022 13:54 UST TFL Jump 105881221734 (Internal) In 100,000,000       
+5/11/2022 13:54 UST TFL Jump 105881968273 (Internal) In 100,000,000       
+5/11/2022 13:55 UST TFL Jump 105882955998 (Internal) In 100,000,000       
+5/11/2022 13:57 UST TFL J ump 105883450696 (Internal) In 100,000,000       
+5/11/2022 13:59 UST TFL Jump 105883715641 (Internal) In 100,000,000       
+5/11/2022 14:03 UST TFL Jump 105884269985 (Internal) In 100,000,000       
+5/11/2022 14:05 UST TFL Jump 105884490586 (Internal) In 70,000,000          
+5/11/2022 14:27 UST TFL Jump 71A7ACC320F0B0AC0525E7EBFBF8F26358A5C488B81640D2CD14323E66B6A5C8terra14tlthgtg6ep6xnqptyg8dp3gcq4jxvgqmskwkd In 885                       
+5/11/2022 14:36 UST TFL Jump 07A12C93FFADF2855AEA7A919155FB1F328FF176B7E17DC0045EA5CF9C118B9Fterra14tlthgtg6ep6xnqptyg8dp3gcq4jxvgqmskwkd In 745,687,699       
+1,515,689,462    Total
+
+--- PDF page 11 ---
+11 
+ 
+ 
+ 
+November 9, 2022 
+Page 11 of 16 
+ 
+ 
+ 
+ 
+ 
+23. Separately, on May 10 th, LFG transferred 28,206 23 BTC to TFL (163mp4eKBixViv7VPwG3aKvcNDkh3UmsSP) in 
+an on-chain transfer. Below are the on-chain details of that transfer. 
+ 
+ 
+Source: BitInfoCharts.com 
+ 
+24. Throughout the May 8 to May 10 period, TFL continued to purchase UST using its cryptocurrency exchange 
+accounts as well as through its curve bot accounts.
+24 
+ 
+From May 8th Through May 11th: TFL Purchased a Total of 23,053,022 LUNA on a Total Basis / 7,780,065 on 
+a Net Basis through its cryptocurrency exchange accounts. 
+ 
+25. To defend the UST Price Peg, LFG, TFL, and Jump were initially purchasing UST and LUNA.  
+ 
+26. The LUNA token is used to help peg UST to the U.S. dollar. If the price of UST exceeds a dollar, $1 of LUNA can 
+be burned and redeemed for 1 UST and if the price of UST falls below the peg, one can swap 1 UST for $1 worth 
+of LUNA. During the depeg, UST was trading at such a low price that UST holders were attempting to arbitrage 
+by swapping 1 UST for $1 worth of LUNA. As UST was burned, more LUNA was minted by the protocol in 
+response. Since the price of LUNA was also declining, all of the UST holders attem pting to swap UST for LUNA 
+created a significant sudden increase in LUNA’s supply. This increase, along with other market factors, caused 
+LUNA’s price to further decline.  
+ 
+27. During the May 8th through May 11th period, TFL purchased a total of 23,053,022 LUNA on a Total Basis, with a 
+contemporaneous value of $1,001,864,982 U.S. dollars. Under the Net Basis, TFL purchased a total of 7,780,065 
+LUNA, with a contemporaneous value of $268,444,270 U.S. dollars, by using TFL’s own assets, not LFG assets.
+25 
+Below is the breakdown of total LUNA purchases by day showing both the Total Basis and Net Basis: 
+ 
+ 
+ 
+   Source: Binance Exchange API, Bitfinex Exchange API, KuCoin Exchange API.  USD Equivalent based on 
+hourly pricing from cryptocompare.com         
+ 
+2. The LFG May 16, 2022, Tweets provided an accurate accounting of LFG’s assets balances on May 
+7 and May 16, 2022. 
+ 
+LFG Tweets 
+ 
+23 This number is rounded from actual BTC transferred of 28,205.54 
+24 See Exhibit 5. 
+25 See Exhibit 4. 
+Timestamp 
+(UTC)
+Asset 
+Type
+Controlling 
+Entity Wallet Address
+Direction 
+(In/Out) Amount
+5/10/2022 1:20 BTC LFG bc1q9d4ywgfnd8h43da5tpcxcn6ajv590cg6d3tg6axemvljvt2k76zs50tv4q Out 28,206
+5/10/2022 1:20 BTC TFL 163mp4eKBixViv7VPwG3aKvcNDkh3UmsSP In 28,206
+ 
+  
+
+
+--- PDF page 12 ---
+12 
+ 
+ 
+ 
+November 9, 2022 
+Page 12 of 16 
+ 
+ 
+ 
+ 
+ 
+ 
+28. On May 16th, 2022, LFG released statements through its Twitter account documenting how its Bitcoin reserves 
+were disbursed to defend the UST peg. 
+ 
+LFG Beginning + Ending Balance 
+ 
+29. LFG’s series of tweets begins with its Saturday, May 7th, 2022, reserve consisting of the following: 
+ 
+ 
+ 
+30. Over the following days, TFL deployed the reserve in defense of peg in the following manner: 
+ 
+BTC   
+- 80,394 BTC Beginning Reserve Balance  
+- 22,189 BTC May 9 03:45 UTC LFG transfer to Jump 
+- 30,000 BTC May 9 18:42 UTC LFG transfer to Jump  
+- 28,206 BTC26May 10 01:20 UTC LFG transfer to TFL (Binance)  
+-       313 BTC May 16 TFL transfer back to LFG 
+ 
+BNB 
+- 39,914 No change 
+ 
+ USDT + USDT 
+- Sold 26,281,671 USDT 
+- Sold 23,555,590 USDC  
+-          50,200,071 UST 
+ 
+ AVAX  
+- 1,973,554 No change 
+ 
+ UST 
+-            697,344 UST Beginning Balance 
+-       50,200,071 UST Converted from USDT + USDC 
+- 1,796,182,310 UST Amount of UST TFL sent to LFG
+27 
+ 
+26 This number is rounded from actual BTC transferred of 28,205.54 
+27 The total purchases of UST on behalf of LFG totaled an estimated 2,601,740,975. TFL transferred 1,796,182,310 UST to 
+
+
+--- PDF page 13 ---
+13 
+ 
+ 
+ 
+November 9, 2022 
+Page 13 of 16 
+ 
+ 
+ 
+ 
+ 
+- 1,847,079,725 UST Ending Balance 
+ LUNA 
+-      1,691,261 LUNA Beginning Balance 
+- 220,694,577 LUNA Converted by TFL using estimated 805,558,665 UST and sent to LFG 
+-         327,164 LUNA staked and sent to LFG 
+- 222,713,002 LUNA Ending Balance 
+ 
+3. The measures recounted in the LFG May 16 Tweets were accurate.  
+ 
+LFG Tweets28 
+ 
+31. JSH has reviewed and confirmed the accuracy of the beginning and ending balances of the May 7 and May 
+16 balances, respectively.   
+ 
+32. However, in our review of the mechanics reported in Tweets #6 and #7, we found that the amount of UST 
+reported as having been purchased by LFG (1,164,018,521 UST) was an estimate.  This exception is examined 
+further below. 
+ 
+    LFG Tweet #6 
+ 
+ 
+  
+33. At the time that these Tweets were released, markets for both BTC and UST were highly volatile, and prices 
+were fluctuating rapidly. Because actual trade data was not easily assessable at the time of the Tweets (it 
+required weeks to process and tabulate), portions of the data included in the tweet had to be estimated 
+based on easily accessible data. Thus, LFG estimated the number of UST that they would be able to purchase 
+using 33,206 BTC as follows: 
+ 
+- The 33,206 BTC that LFG transferred to TFL multiplied by  an average BTC price of 
+$29,663 which equaled $984,989,578 U.S. dollars. This was done to obtain the dollar 
+value that could be used to purchase UST. 
+ 
+- Then, the amount of $984,989,578 U.S. dollars was divided by the average UST price 
+of $0.846197513 resulting in the 1,164,018,521 UST used in the tweet. This was done 
+to find out how many UST could be obtained with the dollar value that LFG had.  
+ 
+34. This estimate didn’t affect our analysis and confirmation that the beginning and ending balances were 
+correct, because calculations using the actual trades reveal the reported balances to be accurate.  
+ 
+- TFL transferred 1,796,182,310 UST to LFG. The resulting amount of 1,796,182,310 UST 
+ 
+LFG (which included 1,515,689,462 UST purchased by Jump), while the remaining 805,558,665 UST were swapped into 
+220,694,577 LUNA to prevent a potential governance attack. Swapped LUNA were eventually transferred to LFG as well.  
+28 See Exhibit 6. 
+
+
+--- PDF page 14 ---
+14 
+ 
+ 
+ 
+November 9, 2022 
+Page 14 of 16 
+ 
+ 
+ 
+ 
+ 
++ LFG’s original balance of 697,344 UST + the 50,200,071 UST that LFG converted from 
+USDT + USDC equals the ending balance of 1,847,079,725 UST. 
+ 
+    LFG Tweet #7 
+ 
+ 
+ 
+35. Tweet #7 was reported using estimated amount of UST that included in Tweet #6. The following shows that 
+when the estimate of 1,164,018,521 UST is used, the remaining amount is 883,525,674 UST to be converted 
+to LUNA. When this tweet was written, it utilized these estimates for the amount of UST that were purchased 
+for the same reasons discussed above.  
+ 
+36. To arrive at a more accurate estimate of UST swapped into L UNA to protect network governance against 
+potential attacks, we computed the amount of LUNA which were staked and into which UST were swapped 
+by TFL trading addresses. The transfers of LUNA from 10 TFL trading bots on May 12, 2022, to five addresses 
+which delegated the obtained tokens to protocol staking, total 220,694,577 LUNA. 29 This number is slightly 
+smaller than 221,021,746 LUNA that Tweet #7 indicated as staked and obtained via UST swaps.30  
+ 
+37. Using data on 5,286 UST/LUNA swap transactions executed by 10 TFL trading bots between May 9 and May 
+11, 2022, we identified the set of swaps which, in aggregate, minted 220,694,577 LUNA. Through this 
+analysis, it was apparent that there was no specific set of swap transactions that could produce an exact 
+match for the above LUNA amount. This is expected since trading bots burn/mint UST and mint/burn LUNA 
+almost continuously for a variety of reasons, including staking LUNA to prevent a governance attack. For this 
+reason, Tweet #7 could not precisely identify an exa ct number of UST swapped into LUNA for staking and 
+governance purposes but could only include an estimate.  
+ 
+38. Depending on the assumed start and end time of swaps, and with the discrepancy being less than 1,000 
+LUNA, we estimated the amount of UST swapped i nto LUNA for staking and governance purposes to be 
+between 785,501,572 UST and 825,615,759 UST, with a mid-point of this range at 805,558,665 UST. 
+ 
+29 The 10 trading addresses terra14tlthgtg6ep6xnqptyg8dp3gcq4jxvgqmskwkd, 
+terra1mer7nd843n5g3v37xxtd3hude6t5rf4cq3mnae, 
+Terra14ny376fe7hys2zqxwc87zp2achp9tju5q6jul4, terra12qmfcxy8kahwt44tn4aq4t6kdmtyer38xnrh7m, 
+terra1t8szgklntcwxyfyflucuq895gpjr8wn6tsqxye, terra1nexqdq252acp09m9eler7jhg9kd3rqfzkek9r0, 
+terra1g5dmf4qpmdrcw77d3ty6djrgujt8r2n3lgyknj, terra1lewnh53gt0hzgjejrtwd z8q7dennz09s6ds4k2, 
+terra1v49w0m38fe87edhqdv30w96wq0pz6u6548q9gj, terra17p4mqd7yl9m0r7cfv0nf9s9zae3d3gm4tmyg2a  obtained the 
+LUNA tokens by way of burning UST and then transferring them to the delegator addresses 
+terra13u3p30c2tn9m8dmru6mfyhmqs379qm43vrx7l7, terra10zzfuednzhkmwn4tqks2mukstr02r5jklpmh2f, 
+terra1anllr0tt8r2my88kp6kmdwdnewnja5246djj99, terra13vpm23s7rw5gqp9ckhqngjesxcuzatytknqpfg, and 
+terra1zz2nf34fjkjygkg0kplkrr29ycxarmct6kafvj. 
+30 Also, we identified that a small amount of staked LUNA (327,164) did not involve UST/LUNA swaps. 
+
+
+--- PDF page 15 ---
+15 
+ 
+ 
+ 
+November 9, 2022 
+Page 15 of 16 
+ 
+ 
+ 
+ 
+ 
+ 
+39. The variations in both Tweets #6 and #7 are immaterial for the following reasons: 
+ 
+• The May 7 beginning balance and the May 16 ending balances are in fact accurate. 
+ 
+• TFL purchased a total of 1,901,559,334 UST on a Total Basis / 1,464,738,304 UST 
+on a Net Basis during May 8 to May 10 to defend the UST price peg. 
+ 
+VI. Acquisition of Historical Trading and Account Data 
+ 
+40. TFL provided JSH with authentication keys required to access certain accounts via their secure, internet-based 
+Application Programming Interfaces (“APIs”) for the following exchanges: Binance, KuCoin, and Bitfinex.  Each 
+API provided a unique structuring of the historical data for each account. JSH developed custom Python scripts 
+to systematically access and acquire a valid copy of all historical trading data dating back to December 31 st, 
+2021. 
+ 
+41. The APIs allow the retrieval of trade, withdrawal, and deposit data for transactions that occurred between a 
+window specified by start and end times.  JSH divided the time range between December 31 st, 2021, through 
+September 15th, 2022, into 3-hour intervals. Each interval was queried in turn for the co rresponding trades. If 
+the number of trades returned was equal to the stated maximum, the interval was further divided into 30 -
+minute sub intervals and the process repeated on each, recursively. The minimum time interval required was 
+10 milliseconds.  
+ 
+42. Using this approach, it is possible that, because the end time for one interval is the start time for the next, 
+duplicative transactions were pulled for two different intervals.  We used each trade’s unique ID to remove 
+duplicative transactions. 
+ 
+43. The results of the acquisition runs were each stored in compressed files. Python scripts were developed to 
+normalize and merge the data sets. JSH used the bcp utility to ingest the compressed files into a Microsoft SQL 
+Server database. 
+ 
+VII. Data Validation Between Acquisitions 
+ 
+44. Time Zone. JSH needed to normalize time to Coordinated Universal Time (“UTC”). Any data received from TFL 
+was provided in Korea Standard Time (UTC+9). All times had 9 hours subtracted to equate to UTC time. The API 
+collected time was acquired in Eas tern Standard Time (UTC -5) and Eastern Daylight Time (UTC -4).   Records 
+before March 13, 2022, 2:00AM had 5 hours added to equate to UTC time. Records after March 13, 2022, had 
+4 hours added to equate to UTC time. 
+ 
+45. Trade Pairs. JSH retrieved a distinct lis t of traded coin pairs. For each coin pair, the total number of trades 
+received from TFL was compared against the data pulled through the API. In addition to the number of trades, 
+a total count of coin trades for each pair was summed and compared. 
+ 
+46. Transaction Date. JSH tallied and compared the total number of all trades for each day.  
+ 
+VIII. Conclusion 
+ 
+47. Based on our independent investigation, we conclude that: 
+
+--- PDF page 16 ---
+16 
+ 
+ 
+ 
+November 9, 2022 
+Page 16 of 16 
+ 
+ 
+ 
+ 
+ 
+ 
+(1) From May 8 to May 12, 2022, LFG and TFL used the following assets to defend the UST Price Peg. 
+ 
+a. On May 8th, LFG directly sold 26,281,671 USDT and 23,555,590 USDC to buy 50,200,071 UST.31 
+ 
+b. Between May 9th and May 10th., LFG transferred a total of 52,189 BTC from its reserves to Jump 
+Trading for Jump to purchase UST.32 
+ 
+c. From May 8 th through May 10 th, on a Total Basis TFL purchased a total of 1,901,559,334 UST 
+through its cryptocurrency exchange accounts (Binance, KuCoin, and Bitfinex) as well as through 
+its TFL curve bots 1 and 2. These purchases had the contemporaneous market value of 
+$1,773,199,279 U.S. dollars. During this period, using a Net Basis , TFL purchased a net total of  
+1,464,738,304 UST through its cryptocurrency exchange accounts (Binance, KuCoin, and Bitfinex) 
+as well as through its TFL curve bots 1 and 2. These purchases had the contemporaneous market 
+value of $1,375,600,151 U.S. dollars. 
+ 
+d. Also, on May 10, TFL received a total of 33,206 BTC from LFG as a reimbursement for a portion 
+of the assets TFL spent defending the peg. LFG transferred 28,206 BTC to TFL’s Binance account 
+and Jump transferred 5,000 BTC to the same account (313 BTC that had not been used was 
+returned to LFG’s wallet). The total amount of 33,206 BTC
+33 had the contemporaneous market 
+value of $1,030,427,532 U.S. dollars. 
+ 
+Thus, based on the total  UST purc hased, TFL spent $742,771,747 U.S. dollars more than it 
+received from LFG to purchase UST in defense of the UST Price Peg.  For the same period, using 
+a total net amount of UST purchased, TFL spent $345,172,619 U.S. dollars more than it received 
+from LFG to purchase UST in defense of the UST Price Peg. 
+ 
+e. Additionally, between May 8 th and May 11 th, using TFL’s own funds, TFL purchased a total of 
+23,053,022 LUNA on a Total Basis, with a contemporaneous value of $1,001,864,982 U.S dollars. 
+Under the Net Basis , TFL purchased a total of 7,780,065 LUNA, with a contemporaneous value 
+of $268,444,270 U.S. dollars. 
+ 
+In total, TFL spent $1,744,636,729 U.S. dollars on a total purchase basis or $613,616,889 U.S. 
+dollars on a net purchase basis of its own in defense of the UST price peg.   
+ 
+(2) The LFG May 16 Tweets provided an accurate accounting of LFG’s asset balances on May 7 and May 16. 
+ 
+ 
+31 See Exhibit 2. 
+32 See Exhibit 3. 
+33 See Exhibit 3. 
+
+--- PDF page 17 ---
+17 
+ 
+ 
+ 
+November 9, 2022 
+Page 17 of 16 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+a. LFG (through TFL and Jump’s purchases on LFG’s behalf) used approximately 80,000 BTC, 
+26,281,671 USDT, and 23,555,590 USDC in the LFG Reserve to purchase UST and to defend the 
+peg.  
+ 
+b. We confirmed that the first and last May 16 tweets, which reported the balances as of May 7 
+and May 16, respectively, are accurate.  
+ 
+(3) The measures recounted in the LFG May 16 Tweets included estimates that did not affect the 
+calculation of the ending balances.  
+ 
+a. Each of LFG’s May 16 Tweets about the details of the UST Price Peg defense operations are 
+factually accurate, except for Tweet #6 and Tweet #7. 
+ 
+b. Tweet #6 listed the amount of UST purchased by LFG as (1,164,018,521 UST). 
+ 
+c. The reported number was an estimate of UST that had been calculated as follows:  
+ 
+The 33,206 BTC that LFG transferred to TFL multiplied by an average BTC 
+price of $29,663 which equaled $984,989,578 U.S. dollars. 
+ 
+$984,989,578 U.S. dollars was then divided by the average UST price of 
+$0.846197513 resulting in the 1,164,018,521 UST used in the tweet. 
+ 
+d. This estimated amount did not affect our analysis and confirmation that the beginning and 
+ending balances were correct.  
+ 
+48. Jump transferred 1,515,689,462 UST on behalf of LFG, to TFL. The addition of what TFL purchased + Jump’s 
+transferred amount of UST equaled the estimated 2,601,740,975 UST. We then confirmed th at TFL 
+transferred 1,796,182,310 UST to LFG. The resulting amount of 1,796,182,310 UST + LFG’s original balance 
+of 697,344 UST + the 50,200,071 UST that LFG converted from USDT + USDC equals the ending balance of 
+1,847,079,725 UST. 
+ 
+
+
+--- PDF page 18 ---
+EXHIBIT 1
+(Removed) 
+
+--- PDF page 19 ---
+EXHIBIT 2 
+
+--- PDF page 20 ---
+8
+50,000,000
+40,000,000
+30,000,000
+20,000,000
+10,000,000
+0.00
+Holdings
+USDT + USDC
+UST
+May 8: LFG converts 
+26,281,671 USDT
+02:12 AM UTC
+May 8: LFG converts 
+23,555,590 USDC
+02:19 AM UTC
+May 8: LFG conversion 
+to 50,200,071 UST
+02:38 AM UTC
+UST 
+Price
+Vol 24h: $8.56BVol 24h: $5.38B
+9 10 11 127
+Price: A coin’s price is calculated by taking the volume weighted average of all market pair 
+prices reported for the cryptoasset. 
+Volume: The volume for each market pair is calculated by taking the 24h volume reported directly from the 
+exchange in quote units and converting it to USD using CoinMarketCap’s existing reference prices.
+LFG Holdings (USDT+USDC) +UST Price
+May 7-12, 2022
+November 9, 2022
+
+--- PDF page 21 ---
+50,000,000
+40,000,000
+30,000,000
+20,000,000
+10,000,000
+0.00
+Holdings
+USDT + USDC
+UST
+LFG converts 
+26,281,671 USDT
+LFG converts 
+23,555,590 USDC
+LFG conversion 
+to 50,200,071 
+UST
+02:12:23 AM UTC 02:19:19 AM UTC 02:38:33 AM UTC
+UST 
+Price
+UST Vol: $1.67B UST Vol : $1.76B
+0.9945
+0.9940
+0.9935
+0.9930
+0.9925
+0.9920
+0.9915
+LFG Holdings: USDT+USDC=UST Activity
+May 8, 2022
+November 9, 2022
+
+--- PDF page 22 ---
+EXHIBIT 3 
+
+--- PDF page 23 ---
+85,000.00
+80,000.00
+75,000.00
+70,000.00
+65,000.00
+60,000.00
+55,000.00
+50,000.00
+45,000.00
+40,000.00
+35,000.00
+30,000.00
+25,000.00
+20,000.00
+15,000.00
+10,000.00
+5,000.00
+0.00
+BTC 
+HoldingsUST
+Price
+LFG Holdings (BTC) + UST Price
+May 7 -12, 2022
+May 9: 03:45 UTC
+LFG transfer to Jump 
+22,189 BTC
+May 9: 18:42 UTC
+LFG transfer to Jump 
+30,000 BTC
+May 10: 01:20 UTC
+LFG transfer to TFL 
+(Binance) 28,206 BTC
+May
+UST Vol $7.7BUST Vol: $4.47B
+*There is a remaining balance of 313 BTC that was 
+transferred by TFL to LFG on May 14 to LFG wallet ~lyr. 
+8 9 10 11 127
+November 9, 2022
+
+--- PDF page 24 ---
+EXHIBIT 4 
+
+--- PDF page 25 ---
+$0
+$200,000,000
+$400,000,000
+$600,000,000
+$800,000,000
+$1,000,000,000
+$1,200,000,000
+LUNA Total Purchases by TFL
+May 8-12, 2022
+LUNA Purchased
+LUNA 
+Price
+May 8 May 9 May 10 May 11 May 12
+USD Value ($)
+Date LUNA Purchased USD Equivalent
+May 8th 5,658,070 $364,633,261 
+May 9th 6,449,293 $331,296,117 
+May 10th 9,667,482 $294,499,752 
+May 11th 1,278,177 $11,435,852 
+Total 23,053,022 $1,001,864,982 
+November 9, 2022
+
+--- PDF page 26 ---
+-$50,000,000
+$0
+$50,000,000
+$100,000,000
+$150,000,000
+$200,000,000
+$250,000,000
+$300,000,000
+LUNA Net Purchases by TFL
+May 8-12, 2022
+LUNA Purchased
+LUNA 
+Price
+May 8 May 9 May 10 May 11 May 12
+USD Value ($)
+Date LUNA Purchased USD Equivalent
+May 8th (48,824) $(3,179,988)
+May 9th 2,212,338 $118,280,264 
+May 10th 4,338,374 $141,908,142 
+May 11th 1,278,177 $11,435,852 
+Total 7,780,065 $268,444,270 
+November 9, 2022
+
+--- PDF page 27 ---
+EXHIBIT 5 
+
+--- PDF page 28 ---
+0
+100,000,000
+200,000,000
+300,000,000
+400,000,000
+500,000,000
+600,000,000
+700,000,000
+800,000,000
+900,000,000
+1,000,000,000
+1,100,000,000
+1,200,000,000
+1,300,000,000
+1,400,000,000
+1,500,000,000
+1,600,000,000
+1,700,000,000
+1,800,000,000
+1,900,000,000
+2,000,000,000
+Volume
+UST 
+Price
+Vol 24h: $5.38B Vol 24h: $8.56B
+2022-05-10 01:20
+LFG Transfer to TFL 28,206 BTC
+UST Equiv: 1,098,078,020
+2022-05-10 08:37*
+JUMP transfer to TFL 5,000 BTC
+UST Equiv: 174,208,032
+TFL Total Purchases of UST
+May 8 -12, 2022
+May 8 May 9 May 10 May 11 May 12
+Circulating Supply 18.7 billion UST 18.6 billion UST 17.4 billion UST 13.3 billion UST 11.4 billion UST
+*4,000 BTC was transferred from Jump to TFL on 5/10/2022 at 8:03 AM with the 
+final 1,000 BTC transferred at 8:37 AM for a total of 5,000 BTC.
+Total UST Quantity
+Date UST Purchased USD Equivalent
+May 8th 691,167,741 $686,766,346
+May 9th 341,312,506 $321,648,208
+May 10th 869,079,087 $764,784,725
+Total 1,901,559,334 $1,773,199,279
+November 9, 2022
+
+--- PDF page 29 ---
+0
+100,000,000
+200,000,000
+300,000,000
+400,000,000
+500,000,000
+600,000,000
+700,000,000
+800,000,000
+900,000,000
+1,000,000,000
+1,100,000,000
+1,200,000,000
+1,300,000,000
+1,400,000,000
+1,500,000,000
+1,600,000,000
+Volume
+UST 
+Price
+Vol 24h: $5.38B Vol 24h: $8.56B
+2022-05-10 01:20
+LFG Transfer to TFL 28,206 BTC
+UST Equiv: 1,098,078,020
+2022-05-10 08:37*
+JUMP transfer to TFL 5,000 BTC
+UST Equiv: 174,208,032
+TFL Net Purchases of UST
+May 8 -12, 2022
+May 8 May 9 May 10 May 11 May 12
+Circulating Supply 18.7 billion UST 18.6 billion UST 17.4 billion UST 13.3 billion UST 11.4 billion UST
+*4,000 BTC was transferred from Jump to TFL on 5/10/2022 at 8:03 AM with the 
+final 1,000 BTC transferred at 8:37 AM for a total of 5,000 BTC.
+Net UST Quantity
+November 9, 2022
+
+--- PDF page 30 ---
+EXHIBIT 6 
+
+--- PDF page 31 ---
+80,394
+33,518 33,518
+1.974M
+1.974M
+1.974M
+1.974M 1.974M 1.974M 1.974M 1.974M 1.974M 1.974M
+1.567B
+1.567B
+2.731B 2.731B
+1.847B
+1.847B 1.847B 1.847B 1.847B
+1.691M
+1.691M
+1.691M
+ $-
+ $500,000,000
+ $1,000,000,000
+ $1,500,000,000
+ $2,000,000,000
+ $2,500,000,000
+ $3,000,000,000
+ $3,500,000,000
+5/7/2022 5/8/2022 5/9/2022 5/10/2022 5/11/2022 5/12/2022 5/13/2022 5/14/2022 5/15/2022 5/16/2022
+USD Value ($)
+Holding Name Beginning Balance Ending Balance
+BTC 80,394 313
+BNB 39,914 39,914
+USDT 26,281,671 0
+USDC 23,555,590 0
+AVAX 1,973,554 1,973,554
+UST 697,344 1,847,079,725
+LUNA 1,691,261 222,713,007
+• LFG transfer to Jump Net 46,876
+(52,189-5,000-313) BTC for
+1.515B UST
+• LFG sale of 26.828M USDT &
+23.556M USDC for 50.2M UST
+• LFG sale of 33,206
+BTC for 1.164B
+UST
+• LFG swap of
+883.526M 
+UST to 
+221.021M 
+LUNA
+BTC Price $35,501.95 $34,059.26 $30,296.95 $31,022.91 $28,936.36 $29,047.75 $29,283.10 $30,101.27 $31,305.11 $29,862.92
+UST Price $0.9969 $0.9964 $0.7934 $0.7999 $0.8011 $0.4086 $0.1540 $0.1964 $0.1767 $0.1264
+LUNA Price $68.25 $64.08 $32.00 $17.52 $1.07 $0.00017 $0.000102 $0.000459 $0.000215 $0.000196
+Tweet #1 Tweet #2-4 Tweet #5a-6 Tweet #7 Tweet #8
+LFG Balances—Tweets (by Tweet)
+May 7-16, 2022
+November 9, 2022

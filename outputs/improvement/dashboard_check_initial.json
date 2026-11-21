@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "unified_exec_session_id": 39637,
+  "authoritative_terminal_exit_code": 0,
+  "command": "python -m pytest tests/test_dashboard.py -k saved_presentation -q",
+  "passed": 6,
+  "deselected_legacy_policy_tests": 2,
+  "runtime_seconds": 136.64,
+  "app_sha256": "fb68ba7140ed12e3371f027ff4e5330f355f0df70dc8591f30f3e806b9fa060b",
+  "tests_sha256": "9f779e6e15f20c63f3c2b2069728e0e6c9d82b111affbd1ab887cd985a41bfde",
+  "qualification": "Six cases passed on the first UI revision. Subsequent app edits only clear stale presentation identity before refusal and wrap metric cards on narrow screens. Same-session refusal is verified separately against the final UI; browser appearance is verified by root.",
+  "simulation_calls_allowed": 0,
+  "optimizer_calls_allowed": 0,
+  "cases": [
+    {"name": "saved all fit, exact four actual/saved chart traces, UTC, honest 1/6 gates", "outcome": "passed"},
+    {"name": "saved train fit switch, exact four chart traces and saved metrics", "outcome": "passed"},
+    {"name": "both date windows filter exact arrays without changing full-period metrics", "outcome": "passed"},
+    {"name": "missing published trajectory refuses, no fallback simulation", "outcome": "passed"},
+    {"name": "tampered published trajectory refuses, no fallback simulation", "outcome": "passed"},
+    {"name": "stale execution identity refuses, no fallback simulation", "outcome": "passed"}
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "seed": 42,
+  "engine": "cadcad",
+  "engine_source_sha256": "beb3754a2c3a485bca3195d54850c4f865b005c9a7d1b882b43fadfbd97a3bd7",
+  "runtime_seconds": 3.0342900999821723,
+  "fit": {
+    "ust_mae": 0.15115796242060797,
+    "deposit_nrmse": 0.31602481900860774,
+    "luna_price_log_rmse": 1.9562498492611402,
+    "luna_supply_log_rmse": 1.036733653626997,
+    "group_mae_max": 0.32964727410731837,
+    "group_metrics": [
+      {
+        "group": 0,
+        "label": "<1K",
+        "mae": 0.1999855970193041,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 1,
+        "label": "1K–10K",
+        "mae": 0.11057449355622695,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 2,
+        "label": "10K–100K",
+        "mae": 0.09424297343678219,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 3,
+        "label": "100K–1M",
+        "mae": 0.11754548994038218,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 4,
+        "label": "1M–10M",
+        "mae": 0.32964727410731837,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 5,
+        "label": ">10M",
+        "mae": 0.2750669369702314,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      }
+    ],
+    "group_paired_count": 4608,
+    "group_observed_count": 4608,
+    "depeg_error_hours": 49.75,
+    "predicted_depeg_utc": "2022-05-07T16:30:00+00:00",
+    "observed_depeg_utc": "2022-05-09T18:15:00+00:00",
+    "depeg_signed_error_hours": -49.75,
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": false,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": false,
+      "group_mae_max": false,
+      "depeg_error_hours": false
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 7490671480.388943,
+    "native_ust_simulated_total": 3829368591.6473227,
+    "native_daily_nrmse": 0.30365569388829555,
+    "native_fee_mae": 0.09782536849001067
+  },
+  "physical_checks": {
+    "passes": true,
+    "recorded_owned_stock_minima": {
+      "anchor_cash": 0.0,
+      "anchor_reserve": 183417348.2654781,
+      "market_usd": 14396080010.100286,
+      "market_ust": -1.4551915228366852e-11,
+      "market_luna": 100000000.0,
+      "outside_luna": 649457905.9555453,
+      "external_cash": 788913428.0850093,
+      "external_ust": 3398.028729124585,
+      "fee_luna": 0.0,
+      "arbitrage_cash_usd": 150000000.0,
+      "arbitrage_luna": 0.0,
+      "rescuer_ust": 0.0,
+      "rescuer_luna": 0.0,
+      "fees_usd": 108570.71714721719
+    },
+    "maximum_absolute_accounting_errors": {
+      "ust_error": 0.0003376007080078125,
+      "luna_error": 0.005859375,
+      "usd_error": 0.00017547607421875,
+      "claim_error": 2.86102294921875e-05
+    },
+    "maximum_relative_accounting_errors": {
+      "ust_error": 2.2742275976822916e-14,
+      "luna_error": 3.2160674261783013e-15,
+      "usd_error": 6.544329322029926e-15,
+      "claim_error": 1.0183642864933694e-13
+    },
+    "accounting_reference_basis": {
+      "ust_error": "Tổng cung UST",
+      "luna_error": "Tổng cung LUNA",
+      "usd_error": "USD ban đầu + đóng góp TFL; không cộng USD từ bán BTC chưa được xuất trong quỹ đạo, nên mẫu số này là cận dưới thận trọng của tổng USD",
+      "claim_error": "Quyền đòi Anchor hiện tại, tối thiểu 1 UST"
+    },
+    "absolute_tolerance": 0.1,
+    "relative_tolerance": 1e-09,
+    "qualification": "Đối chiếu các tồn kho đã xuất; engine kiểm tra thêm sổ cái tác nhân và quỹ trong từng bước."
+  },
+  "qualification": "Các dải p05/trung vị/p95 phản ánh biến thiên giữa seed của tác nhân trong cùng mô hình và bộ tham số đã khớp toàn sự kiện. Chúng không phải khoảng tin cậy về bất định cấu trúc. Đối chiếu lịch sử với bộ tham số này là kiểm tra trong mẫu; không thay thế kiểm định giữ tham số theo thời gian. Không có kịch bản chính sách trong bộ kiểm tra này."
+}

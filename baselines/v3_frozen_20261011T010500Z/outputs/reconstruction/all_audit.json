@@ -1,0 +1,25 @@
+{
+  "run_id": "20261010T142315780978Z_all",
+  "objective_recomputed": 7.711416118569907,
+  "rows": 959,
+  "fit_rows": 959,
+  "target_sha256": "89e7a53d8d795cb48706657306144ee54e4306d667265520127cb31a3d59e4a9",
+  "group_sha256": "c606efc0cece8a608a4c1db7838854340069b37787da061d4c86f0c4a73f9865",
+  "report_metrics_recomputed": true,
+  "financial_metrics_recomputed": true,
+  "published_trajectory_matches_run_archive": true,
+  "fidelity": {
+    "metric_split": "all",
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": false,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": false,
+      "group_mae_max": true,
+      "depeg_error_hours": true
+    },
+    "passes_all": false,
+    "is_parameter_holdout": false
+  },
+  "original_source_files_rechecked": 12
+}

@@ -1,0 +1,83 @@
+{
+  "run_id": "20261011T071942831158Z_all",
+  "objective_recomputed": 6.060074830849166,
+  "rows": 959,
+  "fit_rows": 959,
+  "target_sha256": "89e7a53d8d795cb48706657306144ee54e4306d667265520127cb31a3d59e4a9",
+  "group_sha256": "c606efc0cece8a608a4c1db7838854340069b37787da061d4c86f0c4a73f9865",
+  "report_metrics_recomputed": true,
+  "financial_metrics_recomputed": true,
+  "published_trajectory_matches_run_archive": true,
+  "fidelity": {
+    "metric_split": "all",
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": false,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": false,
+      "group_mae_max": false,
+      "depeg_error_hours": true
+    },
+    "passes_all": false,
+    "is_parameter_holdout": false
+  },
+  "status": "complete",
+  "audit_utc": "2026-10-11T07:33:50.810454+00:00",
+  "source_sha256": {
+    "calibrate.py": "7aa5ff3453a39669c321657894a352194bdfba6b8b797f0b629c6bd34c4de583",
+    "engine.py": "beb3754a2c3a485bca3195d54850c4f865b005c9a7d1b882b43fadfbd97a3bd7",
+    "config.py": "610f1ed6cc25301c1ca22f9305c736e6f94229f25cfc3619ba447875c1f13662",
+    "data.py": "6331fab0b4e19fef798a6c6f593c3468ff36a17e5427e30c1dce3823a8b378e9",
+    "metrics.py": "c71e0345ca304bc22d025e15cd13a07c9d244b3659a1a2f2761508e67a1d48b9",
+    "data/sources.json": "2c9e3680e5c64a745090f6dc8ad0eecc2440d3da9ca6a9684e1a8b5894cbd359",
+    "data/external/btc_usdt_minute.parquet": "86ccb9bbcd9523d53c40b239f205f8628d5ad1780fe89e35ada46b2d5a218f3a",
+    "data/external/btc_metadata.json": "fa24b2bcfed763e896f071deda59f8269f01939ab04af9c4300a60f00f0f9856"
+  },
+  "original_source_files_rechecked": 12,
+  "trajectory_sha256": "1f7bf2a2dccf80f993f7bcd4fb71857d3161b2162b83258ff93a08874b8429c5",
+  "ledger_sha256": "5337f67608696a050fbbd8ab33e7d4e1595109f4973309c2bb45a1dc5f94d2b9",
+  "fast_cadcad_trajectory_exact": true,
+  "fast_cadcad_ledger_byte_exact": true,
+  "physical_checks": {
+    "passes": true,
+    "recorded_owned_stock_minima": {
+      "anchor_cash": 0.0,
+      "anchor_reserve": 175327848.83249173,
+      "market_usd": 15424768490.625692,
+      "market_ust": -1.4551915228366852e-11,
+      "market_luna": 100000000.0,
+      "outside_luna": 649457905.9555453,
+      "external_cash": 801179738.5581144,
+      "external_ust": 3410.5655026186255,
+      "fee_luna": 0.0,
+      "arbitrage_cash_usd": 150000000.0,
+      "arbitrage_luna": 0.0,
+      "rescuer_ust": 0.0,
+      "rescuer_luna": 0.0,
+      "fees_usd": 109156.08200635904
+    },
+    "maximum_absolute_accounting_errors": {
+      "ust_error": 0.000164031982421875,
+      "luna_error": 5.602836608886719e-06,
+      "usd_error": 0.00041961669921875,
+      "claim_error": 2.09808349609375e-05
+    },
+    "maximum_relative_accounting_errors": {
+      "ust_error": 1.0599594185714556e-14,
+      "luna_error": 7.153639020575723e-15,
+      "usd_error": 1.564948316137591e-14,
+      "claim_error": 3.587096573078783e-14
+    },
+    "accounting_reference_basis": {
+      "ust_error": "Tổng cung UST",
+      "luna_error": "Tổng cung LUNA",
+      "usd_error": "USD ban đầu + đóng góp TFL; không cộng USD từ bán BTC chưa được xuất trong quỹ đạo, nên mẫu số này là cận dưới thận trọng của tổng USD",
+      "claim_error": "Quyền đòi Anchor hiện tại, tối thiểu 1 UST"
+    },
+    "absolute_tolerance": 0.1,
+    "relative_tolerance": 1e-09,
+    "qualification": "Đối chiếu các tồn kho đã xuất; engine kiểm tra thêm sổ cái tác nhân và quỹ trong từng bước."
+  },
+  "verification_full_event_simulations": 1,
+  "qualification": "Numerical/source/accounting verification; failed historical gates remain failures."
+}

@@ -1,0 +1,7 @@
+{
+  "fetched_at_utc": "2026-10-11T01:01:55.6623576+00:00",
+  "http_status": 200,
+  "node_info_sha256": "FBB1BFC8574287CA5E9C41B7E4056FF984B69B932CA3CF8CE35A9B0EDEEA6EE7",
+  "network": "columbus-5",
+  "url": "https://terra-classic-lcd.publicnode.com/cosmos/base/tendermint/v1beta1/node_info"
+}

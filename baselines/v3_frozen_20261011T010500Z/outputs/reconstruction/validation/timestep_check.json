@@ -1,0 +1,279 @@
+{
+  "comparison_rows": 959,
+  "ust_mae_between_steps": 0.02788628178558495,
+  "deposit_nrmse_between_steps": 0.27069507780680835,
+  "luna_price_log_rmse_between_steps": 1.0772676803269843,
+  "luna_supply_log_rmse_between_steps": 0.39121867589203135,
+  "initial_anchor_deposits_for_normalization": 14053780588.686373,
+  "alignment": "Chỉ so sánh cùng thời điểm UTC; không nội suy và không tự điền dữ liệu thiếu.",
+  "15min_fit": {
+    "ust_mae": 0.10819536403169629,
+    "deposit_nrmse": 0.12020139851895154,
+    "luna_price_log_rmse": 1.1812656703011033,
+    "luna_supply_log_rmse": 0.7001335215148954,
+    "group_mae_max": 0.14976529543625625,
+    "group_metrics": [
+      {
+        "group": 0,
+        "label": "<1K",
+        "mae": 0.06749006054161806,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 1,
+        "label": "1K–10K",
+        "mae": 0.06194474731129431,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 2,
+        "label": "10K–100K",
+        "mae": 0.09788034896908858,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 3,
+        "label": "100K–1M",
+        "mae": 0.11626038045644815,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 4,
+        "label": "1M–10M",
+        "mae": 0.14976529543625625,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 5,
+        "label": ">10M",
+        "mae": 0.1268774029812528,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      }
+    ],
+    "group_paired_count": 4608,
+    "group_observed_count": 4608,
+    "depeg_error_hours": 0.75,
+    "predicted_depeg_utc": "2022-05-09T19:00:00+00:00",
+    "observed_depeg_utc": "2022-05-09T18:15:00+00:00",
+    "depeg_signed_error_hours": 0.75,
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": false,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": false,
+      "group_mae_max": true,
+      "depeg_error_hours": true
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 7490671480.388943,
+    "native_ust_simulated_total": 5959885721.477544,
+    "native_daily_nrmse": 0.17441942867414884,
+    "native_fee_mae": 0.06234264405650607
+  },
+  "5min_fit": {
+    "ust_mae": 0.12752763546384824,
+    "deposit_nrmse": 0.262341561365349,
+    "luna_price_log_rmse": 1.635090477466086,
+    "luna_supply_log_rmse": 0.9805393885020982,
+    "group_mae_max": 0.24842284827391312,
+    "group_metrics": [
+      {
+        "group": 0,
+        "label": "<1K",
+        "mae": 0.11262638506826134,
+        "paired_count": 2302,
+        "observed_count": 2302,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 1,
+        "label": "1K–10K",
+        "mae": 0.08117238423159188,
+        "paired_count": 2302,
+        "observed_count": 2302,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 2,
+        "label": "10K–100K",
+        "mae": 0.1143888607669129,
+        "paired_count": 2302,
+        "observed_count": 2302,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 3,
+        "label": "100K–1M",
+        "mae": 0.13433688797426252,
+        "paired_count": 2302,
+        "observed_count": 2302,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 4,
+        "label": "1M–10M",
+        "mae": 0.24842284827391312,
+        "paired_count": 2302,
+        "observed_count": 2302,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 5,
+        "label": ">10M",
+        "mae": 0.22686726092635603,
+        "paired_count": 2302,
+        "observed_count": 2302,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      }
+    ],
+    "group_paired_count": 13812,
+    "group_observed_count": 13812,
+    "depeg_error_hours": 36.75,
+    "predicted_depeg_utc": "2022-05-08T05:40:00+00:00",
+    "observed_depeg_utc": "2022-05-09T18:25:00+00:00",
+    "depeg_signed_error_hours": -36.75,
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": false,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": false,
+      "group_mae_max": false,
+      "depeg_error_hours": false
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 7490671480.388942,
+    "native_ust_simulated_total": 6323787701.6603565,
+    "native_daily_nrmse": 0.21956258776255336,
+    "native_fee_mae": 0.08829715301525781
+  },
+  "15min_physical_checks": {
+    "passes": true,
+    "recorded_owned_stock_minima": {
+      "anchor_cash": 0.0,
+      "anchor_reserve": 175306271.3296013,
+      "market_usd": 15426343826.230661,
+      "market_ust": -2.9103830456733704e-11,
+      "market_luna": 100000000.0,
+      "outside_luna": 649457905.9555453,
+      "external_cash": 885550091.2562364,
+      "external_ust": 3412.1528174855666,
+      "fee_luna": 0.0,
+      "arbitrage_cash_usd": 150000000.0,
+      "arbitrage_luna": 0.0,
+      "rescuer_ust": 0.0,
+      "rescuer_luna": 0.0,
+      "fees_usd": 109155.47785801714
+    },
+    "maximum_absolute_accounting_errors": {
+      "ust_error": 0.0019969940185546875,
+      "luna_error": 0.0001220703125,
+      "usd_error": 0.0002899169921875,
+      "claim_error": 1.9073486328125e-05
+    },
+    "maximum_relative_accounting_errors": {
+      "ust_error": 1.5706906111925135e-13,
+      "luna_error": 3.614544728794783e-15,
+      "usd_error": 1.0812370184223356e-14,
+      "claim_error": 8.11081527387849e-15
+    },
+    "accounting_reference_basis": {
+      "ust_error": "Tổng cung UST",
+      "luna_error": "Tổng cung LUNA",
+      "usd_error": "USD ban đầu + đóng góp TFL; không cộng USD từ bán BTC chưa được xuất trong quỹ đạo, nên mẫu số này là cận dưới thận trọng của tổng USD",
+      "claim_error": "Quyền đòi Anchor hiện tại, tối thiểu 1 UST"
+    },
+    "absolute_tolerance": 0.1,
+    "relative_tolerance": 1e-09,
+    "qualification": "Đối chiếu các tồn kho đã xuất; engine kiểm tra thêm sổ cái tác nhân và quỹ trong từng bước."
+  },
+  "5min_physical_checks": {
+    "passes": true,
+    "recorded_owned_stock_minima": {
+      "anchor_cash": 0.0,
+      "anchor_reserve": 181165441.86498252,
+      "market_usd": 14646376045.867188,
+      "market_ust": -5.820766091346741e-11,
+      "market_luna": 100000000.0,
+      "outside_luna": 649457905.9555453,
+      "external_cash": 861270512.4144688,
+      "external_ust": 699.1755915564626,
+      "fee_luna": 0.0,
+      "arbitrage_cash_usd": 150000000.0,
+      "arbitrage_luna": 0.0,
+      "rescuer_ust": 0.0,
+      "rescuer_luna": 0.0,
+      "fees_usd": 67267.72819386942
+    },
+    "maximum_absolute_accounting_errors": {
+      "ust_error": 0.0033130645751953125,
+      "luna_error": 3.0517578125e-05,
+      "usd_error": 0.000335693359375,
+      "claim_error": 4.2438507080078125e-05
+    },
+    "maximum_relative_accounting_errors": {
+      "ust_error": 2.6825972307105157e-13,
+      "luna_error": 6.8592394147319726e-15,
+      "usd_error": 1.2519586529100727e-14,
+      "claim_error": 1.045771277494087e-13
+    },
+    "accounting_reference_basis": {
+      "ust_error": "Tổng cung UST",
+      "luna_error": "Tổng cung LUNA",
+      "usd_error": "USD ban đầu + đóng góp TFL; không cộng USD từ bán BTC chưa được xuất trong quỹ đạo, nên mẫu số này là cận dưới thận trọng của tổng USD",
+      "claim_error": "Quyền đòi Anchor hiện tại, tối thiểu 1 UST"
+    },
+    "absolute_tolerance": 0.1,
+    "relative_tolerance": 1e-09,
+    "qualification": "Đối chiếu các tồn kho đã xuất; engine kiểm tra thêm sổ cái tác nhân và quỹ trong từng bước."
+  },
+  "qualification": "Các dải p05/trung vị/p95 phản ánh biến thiên giữa seed của tác nhân trong cùng mô hình và bộ tham số đã khớp toàn sự kiện. Chúng không phải khoảng tin cậy về bất định cấu trúc. Đối chiếu lịch sử với bộ tham số này là kiểm tra trong mẫu; không thay thế kiểm định giữ tham số theo thời gian. Không có kịch bản chính sách trong bộ kiểm tra này.",
+  "note": "Sai lệch lớn giữa hai bước cho biết tái hiện còn nhạy với thứ tự xử lý hoặc nhịp quyết định tác nhân."
+}

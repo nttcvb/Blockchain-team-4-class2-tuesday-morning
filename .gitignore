@@ -1,0 +1,26 @@
+# 1. Python virtual environment & caches
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# 2. Build artifacts & temporary files
+.guide_work/
+.vscode/
+.idea/
+.DS_Store
+*.log
+
+# 3. Data cache
+data/processed/
+data/external/*.zip
+data/external/*.pdf
+data/external/*audit.txt
+
+# 4. Optional: Heavy trajectory outputs (>90MB)
+# Bo comment dong duoi neu muon commit ca 10 runs de mo web xem ngay khong can tinh lai:
+# !outputs/runs/sc*_seed42/
+outputs/runs/

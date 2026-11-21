@@ -1,0 +1,70 @@
+{
+  "venues": {
+    "binance": {
+      "bins_with_trades": 96,
+      "mae_model": 0.014042586267209412,
+      "mae_aggregate_reference": 0.0003277865711939244,
+      "net_sell_return_correlation": -0.15479437546396818,
+      "gross_sell_ust": 204468131.0,
+      "qualification": "Single-venue descriptive check; USDT/USDC/DAI treated near USD. No volume match with aggregate market is assumed."
+    },
+    "curve": {
+      "bins_with_trades": 56,
+      "mae_model": 0.01457775977762754,
+      "mae_aggregate_reference": 0.0011170437093072738,
+      "net_sell_return_correlation": -0.25252906263674524,
+      "gross_sell_ust": 500278315.20467305,
+      "qualification": "Single-venue descriptive check; USDT/USDC/DAI treated near USD. No volume match with aggregate market is assumed."
+    },
+    "ftx": {
+      "aligned_rows": 864,
+      "ust_mae_model": 0.09874547240567899,
+      "ust_mae_aggregate_reference": 0.007791111384887584,
+      "luna_log_rmse_model": 0.9421830266404224,
+      "qualification": "2022 panel is FTX USD spot, separate from the main price target."
+    }
+  },
+  "before_native_stop": {
+    "ust_mae": 0.07322180399682506,
+    "deposit_nrmse": 0.13205451941064922,
+    "luna_price_log_rmse": 0.9623792929407263,
+    "luna_supply_log_rmse": 0.4285453959239859,
+    "group_mae_max": 0.17142713090177308,
+    "depeg_error_hours": 47.25,
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": false,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": true,
+      "group_mae_max": false,
+      "depeg_error_hours": false
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 7486951464.293391,
+    "native_ust_simulated_total": 6499035606.12076,
+    "native_daily_nrmse": 0.3388409622078026,
+    "native_fee_mae": 0.05745214042777314
+  },
+  "after_native_stop": {
+    "ust_mae": 0.13373016943377075,
+    "deposit_nrmse": 0.011693671139560683,
+    "luna_price_log_rmse": 0.5431860822891831,
+    "luna_supply_log_rmse": 0.39700957441684004,
+    "group_mae_max": 0.1890463687384555,
+    "depeg_error_hours": 47.25,
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": true,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": true,
+      "group_mae_max": false,
+      "depeg_error_hours": false
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 3720016.09555,
+    "native_ust_simulated_total": 0.0,
+    "native_daily_nrmse": 0.5773502691896258,
+    "native_fee_mae": 0.031033710887400336
+  },
+  "qualification": "Full-event parameters, in-sample diagnostics. Onset error uses the complete event; before/after boundaries are dated model approximations."
+}

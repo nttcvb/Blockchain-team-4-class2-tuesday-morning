@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "run_id": "20261010T142316556295Z_train",
+  "objective_version": "gate_phase_onset_native_v3_group_coverage_v1",
+  "process_id": 28168,
+  "started_at_utc": "2026-10-10T14:23:16.556295+00:00",
+  "source_sha256": {
+    "calibrate.py": "7aa5ff3453a39669c321657894a352194bdfba6b8b797f0b629c6bd34c4de583",
+    "engine.py": "0a89a9e690c7998d8fadaa1756466b6195b67219483320403672a441cd95f7ea",
+    "config.py": "610f1ed6cc25301c1ca22f9305c736e6f94229f25cfc3619ba447875c1f13662",
+    "data.py": "6331fab0b4e19fef798a6c6f593c3468ff36a17e5427e30c1dce3823a8b378e9",
+    "metrics.py": "c71e0345ca304bc22d025e15cd13a07c9d244b3659a1a2f2761508e67a1d48b9",
+    "data/sources.json": "2c9e3680e5c64a745090f6dc8ad0eecc2440d3da9ca6a9684e1a8b5894cbd359",
+    "data/external/btc_usdt_minute.parquet": "86ccb9bbcd9523d53c40b239f205f8628d5ad1780fe89e35ada46b2d5a218f3a",
+    "data/external/btc_metadata.json": "fa24b2bcfed763e896f071deda59f8269f01939ab04af9c4300a60f00f0f9856"
+  },
+  "workers": 1,
+  "generations": 0,
+  "popsize": 1,
+  "refinement_iterations": 160,
+  "seed": 42,
+  "warm_start": "outputs\\improvement\\interrupted_runs\\20261010T141023Z\\outputs\\calibration\\best_train.json",
+  "ignored_old_parameters": [],
+  "exact_checkpoint_reused": false,
+  "initializer": "hybrid_latin_hypercube_gaussian",
+  "local_fraction": 0.25,
+  "local_scale": 0.03,
+  "simplex_step": 0.02,
+  "initial_population_size": 13,
+  "calls": 266,
+  "objective": 1.480936636964211,
+  "runtime_seconds": 612.7035112000303
+}

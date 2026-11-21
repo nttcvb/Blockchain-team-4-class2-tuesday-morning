@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "audited_utc": "2026-10-11T13:42:09.753318+00:00",
+  "objective": "Present best existing version on dashboard; model improvements stopped at user request",
+  "selected_run_id": "20261011T071942831158Z_all",
+  "objective_value": 6.060074830849166,
+  "in_sample": true,
+  "historical_gates_passed": 1,
+  "historical_gates_total": 6,
+  "saved_model_and_report_current": true,
+  "final_ui_exact_core_charts_test_passed": true,
+  "final_ui_app_sha256": "1a3668179f02f3a196bed6fa9cd50f2a9350cdf386e4356e2e1ecb325c740a42",
+  "health": "ok",
+  "url": "http://127.0.0.1:8501",
+  "downloaded_config_semantically_exact": true,
+  "screenshot_path": "D:\\New folder\\luna-ust-sim\\outputs\\improvement\\dashboard-presentation-proof.jpg",
+  "screenshot_sha256": "fc5f18dba8fc5548a3b24c7cf79bb496c3924621a17992a72f8de1c34f693fa8",
+  "model_simulations_run_for_presentation": 0,
+  "optimizer_calls_run_for_presentation": 0,
+  "previous_checks": "Initial6saved-presentationtests and1same-session refusal test preserved separately; last changes are layout only."
+}

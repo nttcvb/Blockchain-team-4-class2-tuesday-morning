@@ -1,0 +1,83 @@
+{
+  "recorded_at_utc": "2026-10-11T07:21:49.195061+00:00",
+  "source_directory": "D:\\New folder\\terra-luna-run-replication (1)\\terra-luna-run-replication",
+  "calibration_run_ids": {
+    "train": "20261011T071942383237Z_train",
+    "all": "20261011T071942831158Z_all"
+  },
+  "files": {
+    "prices/ust_price_may2022.parquet": {
+      "sha256": "043c03404a9e53c352df645e192a360b30ce6f853d2006fdec298e950ecdd869",
+      "bytes": 383037,
+      "modified_at_utc": "2026-10-08T13:25:34.702320+00:00",
+      "modified_before_fit_start": true
+    },
+    "prices/luna_price_may2022.parquet": {
+      "sha256": "2007339f3436f3b4690a6cfd3fa9bf324d2586eca081cdacaea5a42244027465",
+      "bytes": 385826,
+      "modified_at_utc": "2026-10-08T13:25:34.733307+00:00",
+      "modified_before_fit_start": true
+    },
+    "anchor_run/epoch_state_fig10.parquet": {
+      "sha256": "29e6cb98fe7a3631e67f6e7e42289c1b11a1fc63a54255242e83367711774074",
+      "bytes": 40160,
+      "modified_at_utc": "2026-10-08T13:25:35.678202+00:00",
+      "modified_before_fit_start": true
+    },
+    "anchor_run/anchor_run_tx_cleaned.parquet": {
+      "sha256": "a62d35b3f7d32996425ddd1506951061d0e57ace9d2ad8df5c6d20ed300587ce",
+      "bytes": 15297286,
+      "modified_at_utc": "2026-10-08T13:25:35.901380+00:00",
+      "modified_before_fit_start": true
+    },
+    "anchor/Anchor_daily_stats.parquet": {
+      "sha256": "046f939acf1e3df422f80685a867d52fbaf6c96382f7f32f98f88f371861d7bd",
+      "bytes": 92516,
+      "modified_at_utc": "2026-10-08T13:25:36.284197+00:00",
+      "modified_before_fit_start": true
+    },
+    "anchor/Anchor_global_stats_fullnode.parquet": {
+      "sha256": "7e6aaf79bdc5865fb5b45b2a9cb970ec46c1d4e0a8826005153e5c2eaa9601d9",
+      "bytes": 2653157,
+      "modified_at_utc": "2026-10-08T13:25:36.023366+00:00",
+      "modified_before_fit_start": true
+    },
+    "daily_balances/columbus-5-lunaust-supply-breakdown-fullnode.parquet": {
+      "sha256": "c23cc9dbb40ea7cf77811bc16a20352a572f36a1b7765376eda12699282f114b",
+      "bytes": 940698,
+      "modified_at_utc": "2026-10-08T13:25:37.066242+00:00",
+      "modified_before_fit_start": true
+    },
+    "native_swaps/luna_total_supply_run.parquet": {
+      "sha256": "db340cb1cbdc8fb94d232fe114c990b11a047488ac6d4a61ba622edf99a173a1",
+      "bytes": 7864,
+      "modified_at_utc": "2026-10-08T13:25:35.092809+00:00",
+      "modified_before_fit_start": true
+    },
+    "native_swaps/ust_luna_swaps_run.parquet": {
+      "sha256": "ecd470c77c314a79fb784f85b436f62e69f636343abd8ab98e6ad60c9347d124",
+      "bytes": 7307232,
+      "modified_at_utc": "2026-10-08T13:25:35.170833+00:00",
+      "modified_before_fit_start": true
+    },
+    "loss/depositor_prerun_size.parquet": {
+      "sha256": "f5939f73c69e2d73e73919f1a8e5db191ab68952d8b3d1ad846abd16f273dfb9",
+      "bytes": 15665917,
+      "modified_at_utc": "2026-10-08T13:25:35.060912+00:00",
+      "modified_before_fit_start": true
+    },
+    "loss/anchor_loss_panel.parquet": {
+      "sha256": "437d2ea16be066833ae03bb97c3437baae4fabed8caa5ffd1d81bac679ceb4ea",
+      "bytes": 14515626,
+      "modified_at_utc": "2026-10-08T13:25:34.901873+00:00",
+      "modified_before_fit_start": true
+    },
+    "labels/interdm_addresses.parquet": {
+      "sha256": "621aaa01d1e941c5a4cb228076bfa80e53b6fd5c8a9a8644db658bbeee32f7ac",
+      "bytes": 18216,
+      "modified_at_utc": "2026-10-08T13:25:35.300746+00:00",
+      "modified_before_fit_start": true
+    }
+  },
+  "qualification": "Recorded after launch. File modification times precede both fits; recheck hashes at final audit. Calibration separately fingerprints code, BTC and semantic targets/groups."
+}

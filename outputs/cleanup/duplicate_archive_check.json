@@ -1,0 +1,532 @@
+{
+  "all_extracted_files_match": true,
+  "zip_sha256": "4bae715784bcbff7d5a38ca9c9d00fc86cc55dcf279bdf1e0cf3d039754a6d18",
+  "files_verified": 105,
+  "checks": [
+    {
+      "entry": "terra-luna-run-replication/LICENSE",
+      "bytes": 3189,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/requirements.txt",
+      "bytes": 815,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/tables/anchor_loss_regression.tex",
+      "bytes": 2310,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/tables/network_entity_classification.tex",
+      "bytes": 4579,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/tables/native_swap_users_run_2021.tex",
+      "bytes": 2779,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/tables/anchor_loss_summary.tex",
+      "bytes": 870,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/tables/network_volume_by_token.tex",
+      "bytes": 1405,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/tables/native_swap_users_run.tex",
+      "bytes": 3187,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/Run_outflow_by_size_combined_240518.png",
+      "bytes": 335148,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/anchor_cash_flow.png",
+      "bytes": 166516,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/Luna_new.png",
+      "bytes": 164512,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/Anchor_ANC_subsidy_rate.png",
+      "bytes": 83162,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/LUNA_staking_decomposition.png",
+      "bytes": 128830,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/anchor_reserve_injection.png",
+      "bytes": 100311,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/mkt_cap2.png",
+      "bytes": 145170,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/swap_arb.png",
+      "bytes": 315958,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/ust_supply_by_entity.png",
+      "bytes": 141698,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/curve_swap_May7.png",
+      "bytes": 287984,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/Anchor_amount_histogram.png",
+      "bytes": 65236,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/Anchor_net_rates_recursive_loans.png",
+      "bytes": 148794,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/Run22-Cox-hazard.png",
+      "bytes": 256511,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/Run_deposit_outflow3.png",
+      "bytes": 151281,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/UST_new.png",
+      "bytes": 212152,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/binance_May7.png",
+      "bytes": 486979,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/May2021-run-dynamics.png",
+      "bytes": 155754,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/swap_arb_may2021.png",
+      "bytes": 273143,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/wallet_A_B.png",
+      "bytes": 183332,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/Run_LUNA_supply_price.png",
+      "bytes": 125725,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/curve_swap_may2021.png",
+      "bytes": 641608,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/Anchor_deposit_conc.png",
+      "bytes": 148232,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/output/figures/May2021_run_by_size.png",
+      "bytes": 157709,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/tables/fmt_tableIA2_native_swap_run_2021.py",
+      "bytes": 3433,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/tables/fmt_table3_loss_regression.py",
+      "bytes": 3892,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/tables/fmt_table2_loss_summary.py",
+      "bytes": 3667,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/tables/fmt_tableIA1_native_swap_run.py",
+      "bytes": 3769,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/tables/fmt_table1_token_volume.py",
+      "bytes": 1926,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/prep/prep_fig06_concentration.py",
+      "bytes": 2449,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/prep/prep_loss_panel.py",
+      "bytes": 13217,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/prep/build_fig13_inputs.py",
+      "bytes": 5190,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/prep/build_swap_arb_price.py",
+      "bytes": 5277,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/config.py",
+      "bytes": 1171,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/figIA5_swap_arbitrage_2021.py",
+      "bytes": 566,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/figIA1_staking_yield.py",
+      "bytes": 3803,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig04_network_volume.py",
+      "bytes": 8442,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig02_ust_supply_by_entity.py",
+      "bytes": 3544,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig13_outflow_by_size.py",
+      "bytes": 5932,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig11_swap_arbitrage.py",
+      "bytes": 4656,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig06_anchor_concentration.py",
+      "bytes": 4248,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig05_market_cap.py",
+      "bytes": 2566,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig01_anchor_net_rates.py",
+      "bytes": 3085,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig09_binance_ustusdt.py",
+      "bytes": 3966,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig10_run_outflows.py",
+      "bytes": 4674,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fit_timecox.R",
+      "bytes": 3120,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig12_death_spiral.py",
+      "bytes": 3533,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/figIA3_may2021_dynamics.py",
+      "bytes": 2106,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/figIA4_may2021_by_size.py",
+      "bytes": 3146,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig03_anchor_cashflow.py",
+      "bytes": 7228,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig07_wallet_A_B.py",
+      "bytes": 4433,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/figIA2_curve_swaps_2021.py",
+      "bytes": 1116,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig08_curve_swaps.py",
+      "bytes": 5826,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/figures/fig14_cox_hazard.py",
+      "bytes": 7231,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/lib/terra_lib.py",
+      "bytes": 2689,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/lib/figstyle.py",
+      "bytes": 4709,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/code/run_all.py",
+      "bytes": 2732,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/README.md",
+      "bytes": 12095,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/.gitignore",
+      "bytes": 195,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/Datasets.md",
+      "bytes": 27807,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/tables/table1_token_volume.csv",
+      "bytes": 671,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/tables/tableIA2_native_swap_users_run_2021.csv",
+      "bytes": 1537,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/tables/tableIA1_native_swap_users_run.csv",
+      "bytes": 1722,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/exchange/binance_ustusdt_may7.parquet",
+      "bytes": 441035,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/prices/ust_price_may2022.parquet",
+      "bytes": 383037,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/prices/luna_price_may2022.parquet",
+      "bytes": 385826,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/prices/ust_luna_minute_price_run.parquet",
+      "bytes": 606351,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/loss/anchor_loss_panel.parquet",
+      "bytes": 14515626,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/loss/depositor_prerun_size.parquet",
+      "bytes": 15665917,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/native_swaps/luna_total_supply_run.parquet",
+      "bytes": 7864,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/native_swaps/ust_luna_swaps_run.parquet",
+      "bytes": 7307232,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/network/volume_by_group_token.csv",
+      "bytes": 25487,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/labels/anchor_contracts.csv",
+      "bytes": 695,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/labels/terra_labels_4vol.parquet",
+      "bytes": 12095,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/labels/interdm_addresses.parquet",
+      "bytes": 18216,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/curve/curve_ust_may2021.parquet",
+      "bytes": 76002,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/curve/curve_ust_3pool_may7.parquet",
+      "bytes": 24074,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor_run/may2021_aust_run_balances.parquet",
+      "bytes": 6743496,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor_run/may21_anchor_run_prices.parquet",
+      "bytes": 101870,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor_run/run_aust_flow_by_depositor.parquet",
+      "bytes": 11918512,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor_run/epoch_state_fig10.parquet",
+      "bytes": 40160,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor_run/anchor_run_tx_cleaned.parquet",
+      "bytes": 15297286,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor/aust_rnk_col5.parquet",
+      "bytes": 1431209,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor/Anchor_global_stats_fullnode.parquet",
+      "bytes": 2653157,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor/prerun_deposits.parquet",
+      "bytes": 14346198,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor/Anchor_daily_stats.parquet",
+      "bytes": 92516,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor/aust_topk_col4.parquet",
+      "bytes": 12391,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor/anchor_deposit_concentration.parquet",
+      "bytes": 18121,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor/anchor_cashflow_transfers.parquet",
+      "bytes": 2168177,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor/aust_supply_col5.parquet",
+      "bytes": 5875,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/anchor/luna_staking_stats.parquet",
+      "bytes": 66790,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/external/lunc-usd-max.csv",
+      "bytes": 96949,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/external/ustc-usd-max.csv",
+      "bytes": 58303,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/hazard/ust_discount_may6_12.parquet",
+      "bytes": 4567,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/hazard/timecox_cum_may6_12.parquet",
+      "bytes": 2642260,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/hazard/survival_may6_12.parquet",
+      "bytes": 6236334,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/daily_balances/columbus-4-lunaust-supply-breakdown-fullnode.parquet",
+      "bytes": 12617337,
+      "matches": true
+    },
+    {
+      "entry": "terra-luna-run-replication/data/daily_balances/columbus-5-lunaust-supply-breakdown-fullnode.parquet",
+      "bytes": 940698,
+      "matches": true
+    }
+  ]
+}

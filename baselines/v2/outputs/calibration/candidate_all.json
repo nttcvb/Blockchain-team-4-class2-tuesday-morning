@@ -1,0 +1,51 @@
+{
+  "parameters": {
+    "hazard_base": -9.003430849116718,
+    "hazard_size": 0.30174898774272824,
+    "hazard_discount": 42.1188929549721,
+    "hazard_outflow": 0.0,
+    "hazard_luna": 29.541856739370804,
+    "hazard_queue": 3.0,
+    "sell_fraction": 0.92,
+    "ust_depth_usd": 158489319246.11108,
+    "ust_depth_luna_beta": 0.9714391853738469,
+    "ust_confidence_beta": 0.278874667928512,
+    "luna_depth_usd": 953808176.425427,
+    "luna_depth_growth": 1.0,
+    "luna_beta_btc": 2.327822500026247,
+    "arb_capacity_day": 3027399590.0759597,
+    "arb_capital_usd": 150000000.0,
+    "base_pool_usd": 50000000.0,
+    "recovery_minutes": 3.6,
+    "min_spread": 0.005,
+    "market_cash_usd": 25000000000.0,
+    "external_ust_inventory": 4000000000.0,
+    "market_luna_inventory": 100000000.0,
+    "normal_demand_day": 25000000.0,
+    "redeposit_day": 0.015,
+    "oracle_lag_minutes": 1,
+    "btc_slippage": 0.003,
+    "btc_fee": 0.001,
+    "execution_fee": 0.001,
+    "reserve_income_day": 2000000.0,
+    "loan_repayment_days": 2.0,
+    "seed_shock_sell_fraction": 0.95
+  },
+  "fit": {
+    "ust_mae": 0.3502833796787087,
+    "deposit_nrmse": 0.05532484396339385,
+    "luna_price_log_rmse": 5.185535275762171,
+    "luna_supply_log_rmse": 3.615526129197061,
+    "group_mae_max": 0.08516688940253728,
+    "depeg_error_hours": 5.25,
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": true,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": false,
+      "group_mae_max": true,
+      "depeg_error_hours": true
+    },
+    "passes_all": false
+  }
+}

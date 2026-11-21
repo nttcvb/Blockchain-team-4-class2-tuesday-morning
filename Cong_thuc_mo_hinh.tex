@@ -1,0 +1,157 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Đặc tả Công thức Toán học Mô hình Luna-UST},
+    pdfpagemode=FullScreen,
+}
+
+\title{\textbf{HỆ THỐNG CÔNG THỨC TOÁN HỌC VÀ CƠ CHẾ MÔ PHỎNG}\\[0.5em]
+\large Dự án Mô phỏng Khủng hoảng Terra (LUNA -- UST) Tháng 05/2022\\
+\normalsize Khung phối hợp: Agent-Based Modeling + System Dynamics + cadCAD}
+\author{Nhóm Nghiên cứu \& Phát triển Dự án}
+\date{Tháng 11 Năm 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Tài liệu này tổng hợp toàn bộ các phương trình toán học, định luật bảo toàn tài sản, cơ chế vi mô của tác nhân (ABM) và phương trình vi phân vi mô/vĩ mô (System Dynamics) được lập trình trong tệp lõi \texttt{luna\_sim/engine.py}. Các công thức được chuẩn hóa theo ký hiệu toán học chuẩn mực để phục vụ thuyết minh khoa học và lưu trữ kỹ thuật.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Mô hình Tác nhân (Agent-Based Modeling -- ABM)}
+
+Mô hình khởi tạo $N = 1.000$ tác nhân người gửi tiền đại diện (được hiệu chỉnh từ dữ liệu on-chain của hàng trăm nghìn ví) và $N_{\text{arb}} = 20$ tác nhân kinh doanh chênh lệch giá (Arbitrageur).
+
+\subsection{Hàm Quyết định Rút tiền của Người gửi tiền (Logit Hazard Model)}
+Tại mỗi bước thời gian $t$ (với chu kỳ $\Delta t = 15$ phút), chỉ số thiên hướng rút tiền $\eta_i(t)$ của tác nhân thứ $i$ được xác định theo mô hình hồi quy logistic:
+\begin{equation}
+\eta_i(t) = \beta_0 + \beta_1 \cdot \big(\log_{10}(\text{size}_i) - 3\big) + \beta_2 \cdot \max(0, 1 - P_{\text{UST}}(t)) + \beta_3 \cdot \text{outflow}_{1\text{h}}(t) + \beta_4 \cdot \Delta_{\log} P_{\text{LUNA}}(t) + \beta_5 \cdot \text{queue\_frac}(t)
+\end{equation}
+
+Trong đó:
+\begin{itemize}
+    \item $\beta_0 = \text{hazard\_base} = -11{,}0$: Hệ số chặn nguy cơ cơ sở.
+    \item $\beta_1 = \text{hazard\_size} = 0{,}20$: Độ nhạy theo quy mô ví ($\text{size}_i$ là số dư ban đầu tính bằng USD).
+    \item $\beta_2 = \text{hazard\_discount} = 12{,}0$: Mức độ hoảng loạn khi UST mất mốc 1 USD ($1 - P_{\text{UST}}$).
+    \item $\beta_3 = \text{hazard\_outflow} = 18{,}0$: Hiệu ứng bầy đàn theo tổng lượng rút khỏi Anchor trong 1 giờ gần nhất.
+    \item $\beta_4 = \text{hazard\_luna} = 2{,}0$: Tốc độ sụt giảm giá LUNA quan sát được trên nhịp đồng hồ 15 phút.
+    \item $\beta_5 = \text{hazard\_queue} = 3{,}0$: Tỷ lệ hàng đợi rút tiền chờ xử lý trên tổng tiền gửi Anchor.
+\end{itemize}
+
+Xác suất rút tiền của tác nhân $i$ trong khoảng thời gian $\Delta t$ được chuẩn hóa bảo toàn theo tỷ lệ thời gian:
+\begin{equation}
+P_i(\text{rút} \mid \Delta t) = 1 - \big(1 - \sigma(\eta_i(t))\big)^{\frac{\Delta t}{15}} \quad \text{với} \quad \sigma(\eta) = \frac{1}{1 + e^{-\eta}}
+\end{equation}
+
+Ở chế độ ngẫu nhiên (\textit{stochastic mode}), lượng tiền yêu cầu rút mới được kích hoạt theo phân phối nhị thức Bernoulli:
+\begin{equation}
+\Delta \text{queue}_i(t) = (\text{deposit}_i(t) - \text{queue}_i(t)) \cdot \mathbf{1}_{\{U_i < P_i(\text{rút} \mid \Delta t)\}}, \quad U_i \sim \mathcal{U}(0, 1)
+\end{equation}
+
+\subsection{Hành vi Tối ưu hóa của Arbitrageur}
+Khi thị giá $P_{\text{UST}} < 1 - \text{spread}$, Arbitrageur tìm kiếm quy mô mua $q^*$ nhằm cực đại hóa lợi nhuận kỳ vọng sau khi trừ phí trượt giá và phí giao dịch:
+\begin{equation}
+q^* = \arg\max_{0 \le q \le q_{\max}} \left[ \Pi(q) = \min\big(\text{Cash}_{\text{buyer}}, \text{VWAP}_{\text{proceeds}}(\text{LUNA}_{\text{held}} + \text{LUNA}_{\text{deliv}}(q))\big) \cdot (1 - f_{\text{fee}}) - q \cdot P_{\text{UST}} \right]
+\end{equation}
+Hàm tối ưu được giải bằng phương pháp chia đôi đạo hàm (\textit{bisection root finding}) trong 32 bước tại hàm \texttt{native\_vwap\_optimum}.
+
+\newpage
+\section{Động lực học Hệ thống (System Dynamics -- SD)}
+
+\subsection{Hợp đồng Tiền gửi Anchor Protocol}
+Thanh khoản Anchor xuất quỹ theo cơ chế hạn mức và hàng đợi theo tỷ lệ:
+\begin{equation}
+\text{Served}(t) = \min\big(\text{Queue}_{\text{total}}(t), \; \text{Cash}_{\text{Anchor}}(t), \; \text{Limit}_{\text{withdraw}}(t)\big)
+\end{equation}
+Tỷ lệ giải ngân phân bổ đều cho từng người gửi:
+\begin{equation}
+\alpha(t) = \frac{\text{Served}(t)}{\text{Queue}_{\text{total}}(t)} \implies \Delta \text{Wallet\_UST}_i(t) = \alpha(t) \cdot \text{queue}_i(t)
+\end{equation}
+
+\subsection{Thị trường Thứ cấp: Hàm Cầu Ngược (Inverse Demand Curves)}
+Giá thị trường tại mỗi phút được cập nhật theo áp lực dòng tiền ròng mua/bán:
+
+\paragraph{1. Giá UST:}
+\begin{equation}
+P_{\text{UST}}(t+1) = P_{\text{UST}}(t) \cdot \exp\left( \text{clip}\left( -\frac{\text{net\_ust\_sale} \cdot P_{\text{UST}}(t)}{\text{Depth}_{\text{UST}}(t)} + \Delta\text{Confidence}(t), \; -4{,}0, \; 4{,}0 \right) \right)
+\end{equation}
+Trong đó độ sâu thanh khoản phụ thuộc vào thị giá LUNA:
+\begin{equation}
+\text{Depth}_{\text{UST}}(t) = D_{\text{UST}, 0} \cdot \max\left(\frac{P_{\text{LUNA}}(t)}{P_{\text{LUNA}}(0)}, \; 10^{-4}\right)^{\beta_{\text{depth}}} + \text{LP}_{\text{support}}
+\end{equation}
+Tín hiệu niềm tin thị trường (\textit{confidence factor}):
+\begin{equation}
+\text{Confidence}(t) = \min\left(1{,}0, \; \frac{S_{\text{LUNA}}(t) \cdot P_{\text{LUNA}}(t)}{S_{\text{UST}}(t)}\right)
+\end{equation}
+
+\paragraph{2. Giá LUNA:}
+\begin{equation}
+P_{\text{LUNA}}(t+1) = P_{\text{LUNA}}(t) \cdot \exp\left( \text{clip}\left( -\text{sign}(\text{net\_luna}) \cdot \ln\left(1 + \frac{|\text{net\_luna}|}{\text{Depth}_{\text{LUNA}}(t)}\right), \; -6{,}0, \; 3{,}0 \right) + \beta_{\text{BTC}} \cdot r_{\text{BTC}}(t) \right)
+\end{equation}
+
+\subsection{Cơ chế Native Swap (Virtual Constant-Product Pool)}
+Hệ thống sử dụng mô hình Constant Product xấp xỉ trên đơn vị USD:
+\begin{equation}
+x(t) = \max(\text{BasePool} + \Delta_{\text{virtual}}(t), \; 1{,}0)
+\end{equation}
+\begin{equation}
+\text{Delivered\_Value}(q) = \min\left( \frac{\text{BasePool}^2}{x(t)} \cdot \frac{q}{x(t) + q}, \; q \cdot (1 - \text{spread}) \right)
+\end{equation}
+Số lượng token LUNA đúc mới và phí thu giữ:
+\begin{equation}
+\text{LUNA}_{\text{delivered}} = \frac{\text{Delivered\_Value}(q)}{\text{Oracle}_{\text{LUNA}}(t)}, \quad \text{LUNA}_{\text{gross}} = \frac{q}{\text{Oracle}_{\text{LUNA}}(t)}
+\end{equation}
+\begin{equation}
+\text{fee}_{\text{LUNA}} = \text{LUNA}_{\text{gross}} - \text{LUNA}_{\text{delivered}}
+\end{equation}
+Độ lệch Virtual Pool phục hồi theo hàm mũ với thời gian bán rã:
+\begin{equation}
+\Delta_{\text{virtual}}(t + \tau) = \Delta_{\text{virtual}}(t) \cdot \exp\left(-\frac{\tau}{T_{\text{recovery}}}\right)
+\end{equation}
+
+\newpage
+\section{Định luật Bảo toàn và Hạch toán (Accounting Invariants)}
+
+Sau mỗi bước tính toán, khối \texttt{accounting} đối soát toàn bộ tài sản để bảo đảm không có token hay USD nào bị rò rỉ:
+
+\begin{equation}
+\begin{aligned}
+\text{Error}_{\text{UST}} &= \Big(\text{Cash}_{\text{Anchor}} + \text{Loan}_{\text{UST}} + \text{Reserve}_{\text{Anchor}} + \text{Market}_{\text{UST}} + \sum \text{Wallet}_{\text{UST}} + \text{Ext}_{\text{UST}} + \sum \text{Fund}_{\text{UST}}\Big) - S_{\text{UST}} \equiv 0 \\[0.5em]
+\text{Error}_{\text{LUNA}} &= \Big(\text{Outside}_{\text{LUNA}} + \text{Market}_{\text{LUNA}} + \sum \text{Arb}_{\text{LUNA}} + \sum \text{Fund}_{\text{LUNA}} + \text{Fee}_{\text{LUNA}}\Big) - S_{\text{LUNA}} \equiv 0 \\[0.5em]
+\text{Conservation}_{\text{BTC}} &= \text{Locked}_{\text{BTC}} + \sum \text{Fund}_{\text{BTC}} + \text{Sold}_{\text{BTC}} \equiv 80{,}394 \quad (\pm 0{,}001\text{ BTC})
+\end{aligned}
+\end{equation}
+
+Nếu bất kỳ sai số nào vượt quá ngưỡng $\epsilon = 0{,}1$ đơn vị token, mô hình sẽ lập tức kích hoạt ngoại lệ \texttt{AssertionError} và dừng mô phỏng.
+
+\section{Khung Điều phối cadCAD (Orchestrator Pipeline)}
+
+Mỗi bước thời gian $\Delta t = 15$ phút chạy tuần tự qua đúng 6 khối PSUB (\textit{Partial State Update Blocks}):
+\begin{equation}
+\mathcal{S}_{t+1} = \Big(\mathcal{F}_{\text{accounting}} \circ \mathcal{F}_{\text{markets}} \circ \mathcal{F}_{\text{anchor}} \circ \mathcal{F}_{\text{decisions}} \circ \mathcal{F}_{\text{rescue}} \circ \mathcal{F}_{\text{observation}}\Big)(\mathcal{S}_t)
+\end{equation}
+
+\section{Hàm Mục tiêu Tối ưu Tham số (Calibration Loss Function)}
+
+Thuật toán di truyền (\textit{Differential Evolution}) tìm vector tham số $\boldsymbol{\theta}^* \in \mathbb{R}^{44}$ nhằm cực tiểu hóa sai số tổng hợp đối với dữ liệu lịch sử quan sát:
+\begin{equation}
+\mathcal{L}(\boldsymbol{\theta}) = w_1 \cdot \text{MAE}(P_{\text{UST}}) + w_2 \cdot \text{NRMSE}(\text{Deposits}) + w_3 \cdot \text{RMSE}(\log_{10} P_{\text{LUNA}}) + w_4 \cdot \text{RMSE}(\log_{10} S_{\text{LUNA}}) + w_5 \cdot \text{Penalty}_{\text{peg}}
+\end{equation}
+
+\end{document}

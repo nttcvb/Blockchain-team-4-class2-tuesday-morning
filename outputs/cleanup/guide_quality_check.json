@@ -1,0 +1,40 @@
+{
+  "document": "docs\\Huong_dan_mo_hinh_Luna_UST.docx",
+  "sha256": "3fe343cacb3b92186c368494d38c6faa14bda9f03821a7039bf6961df2678864",
+  "bytes": 1140755,
+  "pages": 14,
+  "figures": 10,
+  "figures_with_alt_text": 10,
+  "all_pages_visually_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "renderer": "Microsoft Word fixed-format export; packaged render_docx.py reported missing LibreOffice",
+  "labels": {
+    "A": "Agent",
+    "S": "System and agent state",
+    "H": "Action or flow",
+    "M": "Mechanism",
+    "X": "Exogenous input"
+  },
+  "definitions": "state meaning units updates; actor holdings observations rules and impacts; individual vs aggregate roles",
+  "selected_run": "20261011T071942831158Z_all",
+  "model_recomputed": false,
+  "source_basis": [
+    "luna_sim/engine.py",
+    "luna_sim/config.py",
+    "MODEL_SPEC.md"
+  ]
+}

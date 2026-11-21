@@ -1,0 +1,487 @@
+{
+  "created_at_utc": "2026-10-11T07:16:42.943506+00:00",
+  "status": "qualified_saved_artifact_checks_passed",
+  "binding": "D:\\New folder\\luna-ust-sim\\baselines\\v3_frozen_20261011T010500Z",
+  "frozen_archive_manifest_verified": {
+    "files": 148,
+    "all_match": true
+  },
+  "current_engine_identity_claimed": false,
+  "simulations_performed": 0,
+  "optimizer_calls_performed": 0,
+  "terminal_jobs": {
+    "train": {
+      "status": "complete",
+      "calls": 266,
+      "pid": 28168,
+      "pid_live": false
+    },
+    "all": {
+      "status": "complete",
+      "calls": 460,
+      "pid": 33152,
+      "pid_live": false
+    },
+    "coupled_private": {
+      "status": "complete",
+      "evaluations": 350,
+      "pid": 38456,
+      "pid_live": false
+    },
+    "attention_private": {
+      "status": "complete",
+      "evaluations": 350,
+      "pid": 32044,
+      "pid_live": false
+    }
+  },
+  "attention": {
+    "terminal_status": {
+      "status": "complete",
+      "process_id": 32044,
+      "evaluations_including_controls_and_verification": 350,
+      "hard_budget": 350,
+      "stage": "verification",
+      "elapsed_seconds": 1549.8326353000011,
+      "best_loss": 7.498371876404549
+    },
+    "record_sequence_and_all_17_dimensions_verified": true,
+    "source_binding": {
+      "private": {
+        "files": 5,
+        "all_match": true
+      },
+      "frozen_public": {
+        "files": 8,
+        "all_match": true
+      },
+      "coupling": {
+        "files": 10,
+        "all_match": true
+      },
+      "raw": {
+        "files": 12,
+        "all_match": true
+      },
+      "effective_decisions_reconstructed_exact": true,
+      "completed_public_archives": {
+        "config": true,
+        "report": true,
+        "parameters": true
+      }
+    },
+    "scoring_input_identity": {
+      "target": {
+        "expected_in_memory_frame_sha256": "89e7a53d8d795cb48706657306144ee54e4306d667265520127cb31a3d59e4a9",
+        "parquet_round_trip_frame_sha256": "11cd01e049e06eab0b224b4ee6623d6779ec1ee687e375dc609d27dafd8256b6",
+        "rebuilt_from_hashed_raw_frame_sha256": "89e7a53d8d795cb48706657306144ee54e4306d667265520127cb31a3d59e4a9",
+        "direct_saved_hash_matches": false,
+        "exact_values_dtypes_index_and_missingness": true,
+        "index_frequency_metadata": {
+          "saved": "None",
+          "rebuilt": "<15 * Minutes>"
+        },
+        "canonical_missing_value_hash_matches": true,
+        "canonical_missing_value_hash": "11cd01e049e06eab0b224b4ee6623d6779ec1ee687e375dc609d27dafd8256b6",
+        "bitpattern_differences": [
+          {
+            "column": "native_fee",
+            "time": "2022-05-07T19:15:00+00:00",
+            "saved_nan_bits": "0x7ff8000000000000",
+            "rebuilt_nan_bits": "0xfff8000000000000"
+          },
+          {
+            "column": "native_fee",
+            "time": "2022-05-07T19:30:00+00:00",
+            "saved_nan_bits": "0x7ff8000000000000",
+            "rebuilt_nan_bits": "0xfff8000000000000"
+          },
+          {
+            "column": "native_fee",
+            "time": "2022-05-12T16:30:00+00:00",
+            "saved_nan_bits": "0x7ff8000000000000",
+            "rebuilt_nan_bits": "0xfff8000000000000"
+          },
+          {
+            "column": "native_fee",
+            "time": "2022-05-12T16:45:00+00:00",
+            "saved_nan_bits": "0x7ff8000000000000",
+            "rebuilt_nan_bits": "0xfff8000000000000"
+          },
+          {
+            "column": "native_fee",
+            "time": "2022-05-12T17:00:00+00:00",
+            "saved_nan_bits": "0x7ff8000000000000",
+            "rebuilt_nan_bits": "0xfff8000000000000"
+          },
+          {
+            "column": "native_fee",
+            "time": "2022-05-12T17:15:00+00:00",
+            "saved_nan_bits": "0x7ff8000000000000",
+            "rebuilt_nan_bits": "0xfff8000000000000"
+          },
+          {
+            "column": "native_fee",
+            "time": "2022-05-12T17:30:00+00:00",
+            "saved_nan_bits": "0x7ff8000000000000",
+            "rebuilt_nan_bits": "0xfff8000000000000"
+          },
+          {
+            "column": "native_fee",
+            "time": "2022-05-12T17:45:00+00:00",
+            "saved_nan_bits": "0x7ff8000000000000",
+            "rebuilt_nan_bits": "0xfff8000000000000"
+          }
+        ],
+        "qualification": "Legacy _frame_hash is sensitive to floating NaN bit patterns. Saved artifacts are not rewritten or retagged."
+      },
+      "groups": {
+        "expected_in_memory_frame_sha256": "c606efc0cece8a608a4c1db7838854340069b37787da061d4c86f0c4a73f9865",
+        "parquet_round_trip_frame_sha256": "c606efc0cece8a608a4c1db7838854340069b37787da061d4c86f0c4a73f9865",
+        "rebuilt_from_hashed_raw_frame_sha256": "c606efc0cece8a608a4c1db7838854340069b37787da061d4c86f0c4a73f9865",
+        "direct_saved_hash_matches": true,
+        "exact_values_dtypes_index_and_missingness": true,
+        "index_frequency_metadata": {
+          "saved": "None",
+          "rebuilt": "None"
+        },
+        "canonical_missing_value_hash_matches": true,
+        "canonical_missing_value_hash": "c606efc0cece8a608a4c1db7838854340069b37787da061d4c86f0c4a73f9865",
+        "bitpattern_differences": [],
+        "qualification": "Legacy _frame_hash is sensitive to floating NaN bit patterns. Saved artifacts are not rewritten or retagged."
+      }
+    },
+    "fast_cadcad_exact": {
+      "trajectory": {
+        "exact": true,
+        "rows": 959,
+        "columns": 58
+      },
+      "ledger": {
+        "exact": true,
+        "rows": 47829,
+        "columns": 19
+      }
+    },
+    "warm_public_disabled_exact_and_matches_frozen_archive": true,
+    "objective_recomputed": 7.498371876404549,
+    "final_fit_recomputed": {
+      "ust_mae": 0.10792830330358438,
+      "deposit_nrmse": 0.11947431406954334,
+      "luna_price_log_rmse": 1.1583606182015989,
+      "luna_supply_log_rmse": 0.6751490000407973,
+      "group_mae_max": 0.14153247667688781,
+      "group_metrics": [
+        {
+          "group": 0,
+          "label": "<1K",
+          "mae": 0.06563725988699061,
+          "paired_count": 768,
+          "observed_count": 768,
+          "observed_start_utc": "2022-05-06T00:15:00+00:00",
+          "observed_end_utc": "2022-05-14T00:00:00+00:00",
+          "paired_start_utc": "2022-05-06T00:15:00+00:00",
+          "paired_end_utc": "2022-05-14T00:00:00+00:00"
+        },
+        {
+          "group": 1,
+          "label": "1K–10K",
+          "mae": 0.062405524299909,
+          "paired_count": 768,
+          "observed_count": 768,
+          "observed_start_utc": "2022-05-06T00:15:00+00:00",
+          "observed_end_utc": "2022-05-14T00:00:00+00:00",
+          "paired_start_utc": "2022-05-06T00:15:00+00:00",
+          "paired_end_utc": "2022-05-14T00:00:00+00:00"
+        },
+        {
+          "group": 2,
+          "label": "10K–100K",
+          "mae": 0.09498015214691695,
+          "paired_count": 768,
+          "observed_count": 768,
+          "observed_start_utc": "2022-05-06T00:15:00+00:00",
+          "observed_end_utc": "2022-05-14T00:00:00+00:00",
+          "paired_start_utc": "2022-05-06T00:15:00+00:00",
+          "paired_end_utc": "2022-05-14T00:00:00+00:00"
+        },
+        {
+          "group": 3,
+          "label": "100K–1M",
+          "mae": 0.11310295705268288,
+          "paired_count": 768,
+          "observed_count": 768,
+          "observed_start_utc": "2022-05-06T00:15:00+00:00",
+          "observed_end_utc": "2022-05-14T00:00:00+00:00",
+          "paired_start_utc": "2022-05-06T00:15:00+00:00",
+          "paired_end_utc": "2022-05-14T00:00:00+00:00"
+        },
+        {
+          "group": 4,
+          "label": "1M–10M",
+          "mae": 0.14153247667688781,
+          "paired_count": 768,
+          "observed_count": 768,
+          "observed_start_utc": "2022-05-06T00:15:00+00:00",
+          "observed_end_utc": "2022-05-14T00:00:00+00:00",
+          "paired_start_utc": "2022-05-06T00:15:00+00:00",
+          "paired_end_utc": "2022-05-14T00:00:00+00:00"
+        },
+        {
+          "group": 5,
+          "label": ">10M",
+          "mae": 0.11879240939878254,
+          "paired_count": 768,
+          "observed_count": 768,
+          "observed_start_utc": "2022-05-06T00:15:00+00:00",
+          "observed_end_utc": "2022-05-14T00:00:00+00:00",
+          "paired_start_utc": "2022-05-06T00:15:00+00:00",
+          "paired_end_utc": "2022-05-14T00:00:00+00:00"
+        }
+      ],
+      "group_paired_count": 4608,
+      "group_observed_count": 4608,
+      "depeg_error_hours": 1.0,
+      "predicted_depeg_utc": "2022-05-09T19:15:00+00:00",
+      "observed_depeg_utc": "2022-05-09T18:15:00+00:00",
+      "depeg_signed_error_hours": 1.0,
+      "gates": {
+        "ust_mae": false,
+        "deposit_nrmse": false,
+        "luna_price_log_rmse": false,
+        "luna_supply_log_rmse": false,
+        "group_mae_max": true,
+        "depeg_error_hours": true
+      },
+      "passes_all": false,
+      "native_ust_observed_total": 7490671480.388943,
+      "native_ust_simulated_total": 5980435935.592842,
+      "native_daily_nrmse": 0.17451732179212165,
+      "native_fee_mae": 0.06223440877480053
+    },
+    "best_evaluation": 324,
+    "best_attention": {
+      "enabled": true,
+      "attention_cap_day": 96.0,
+      "attention_wealth_elasticity": 0.0
+    },
+    "best_coupled_behavior": {
+      "outside_max_ust": 12000000000.0,
+      "holder_exit_day": 0.0
+    },
+    "changed_core_parameters": {
+      "hazard_outflow": {
+        "warm": 109.79324522292586,
+        "selected": 109.51919678001929
+      },
+      "luna_depth_growth": {
+        "warm": 0.45341295020225203,
+        "selected": 0.47644409207076416
+      }
+    },
+    "control_losses": {
+      "warm_public": 7.711416118569907,
+      "warm_disabled": 7.711416118569907,
+      "cap96_beta0": 8.57953050023375
+    },
+    "evaluations_by_stage": {
+      "warm": 2,
+      "uniform_ceiling_control": 1,
+      "structured_exploration": 30,
+      "joint_de": 180,
+      "joint_local": 135,
+      "verification": 2
+    },
+    "errors": [],
+    "final_accounting_and_owner_checks": {
+      "passes": true,
+      "recorded_owned_stock_minima": {
+        "anchor_cash": 0.0,
+        "anchor_reserve": 175283603.9478958,
+        "market_usd": 15437727057.957405,
+        "market_ust": -1.4551915228366852e-11,
+        "market_luna": 100000000.0,
+        "outside_luna": 649457905.9555453,
+        "external_cash": 885138644.4180832,
+        "external_ust": 3412.1528174855666,
+        "fee_luna": 0.0,
+        "arbitrage_cash_usd": 150000000.0,
+        "arbitrage_luna": 0.0,
+        "rescuer_ust": 0.0,
+        "rescuer_luna": 0.0,
+        "fees_usd": 109155.47785801714
+      },
+      "maximum_absolute_accounting_errors": {
+        "ust_error": 0.0017871856689453125,
+        "luna_error": 0.0001220703125,
+        "usd_error": 0.00019073486328125,
+        "claim_error": 2.288818359375e-05
+      },
+      "maximum_relative_accounting_errors": {
+        "ust_error": 1.4079462920679689e-13,
+        "luna_error": 2.9189517284627033e-15,
+        "usd_error": 7.11340143698905e-15,
+        "claim_error": 1.9958847968794367e-14
+      },
+      "accounting_reference_basis": {
+        "ust_error": "Tổng cung UST",
+        "luna_error": "Tổng cung LUNA",
+        "usd_error": "USD ban đầu + đóng góp TFL; không cộng USD từ bán BTC chưa được xuất trong quỹ đạo, nên mẫu số này là cận dưới thận trọng của tổng USD",
+        "claim_error": "Quyền đòi Anchor hiện tại, tối thiểu 1 UST"
+      },
+      "absolute_tolerance": 0.1,
+      "relative_tolerance": 1e-09,
+      "qualification": "Đối chiếu các tồn kho đã xuất; engine kiểm tra thêm sổ cái tác nhân và quỹ trong từng bước."
+    },
+    "holder_sales_zero": true,
+    "outside_ust_max": 10154242379.675442,
+    "activity": {
+      "potential_wallet_step_opportunities": 958806,
+      "changed_probability_opportunities": 594260,
+      "ceiling_binding_opportunities": 594260,
+      "maximum_absolute_probability_difference": 0.36787944117144233,
+      "wealth_dependent_ceilings_present": false,
+      "cap96_beta0_max_15min_probability": 0.6321205588285577,
+      "qualification": "Probability reconstruction on archived signals only; no wallet balance exposure, changed request amounts, or causal loss attribution."
+    },
+    "original_audit_json_present": false,
+    "original_RUN_REVIEW_md_present": false,
+    "qualification": "Terminal exploratory joint fit, not promoted. Only 2/6 full-event gates; no holdout, convergence or causal mechanism attribution. Separate original operator audit/report missing; this qualified audit does not retag the run."
+  },
+  "protocol_capacity": {
+    "terminal_status": {
+      "status": "complete",
+      "attempted": 9,
+      "completed": [
+        "train_core",
+        "train_no_bump",
+        "train_proposal_arb4",
+        "train_proposal_arb1",
+        "all_core",
+        "all_no_bump",
+        "all_proposal_arb4",
+        "all_proposal_arb1",
+        "all_arb4_whole"
+      ],
+      "active_run": null,
+      "primary_budget": 9,
+      "hard_budget": 11,
+      "protected_inputs_unchanged": true
+    },
+    "frozen_archive_binding": {
+      "files": 24,
+      "all_match": true,
+      "launch_protected_paths_not_in_completed_public_archive": [
+        "outputs/calibration/candidate_all.json",
+        "outputs/calibration/checkpoint_all_v3.json",
+        "outputs/calibration/checkpoint_train_v3.json",
+        "outputs/calibration/cross_venue_15min.parquet",
+        "outputs/calibration/diagnostics.json"
+      ],
+      "qualification": "Archive intentionally preserves completed public deliverables; omitted transient/checkpoint/diagnostic paths are not falsely marked verified. Checkpoint identity is independently bound to byte-identical archived best files and the private run checkpoint."
+    },
+    "raw_binding": {
+      "files": 11,
+      "all_match": true
+    },
+    "effective_source_AST_verified": true,
+    "probes": [
+      {
+        "run_id": "train_core",
+        "all_loss": 145.6139454789888,
+        "holdout_loss": 282.82238995181024,
+        "all_gates": 3,
+        "artifact_identity_and_metrics_verified": true
+      },
+      {
+        "run_id": "train_no_bump",
+        "all_loss": 145.6966996525833,
+        "holdout_loss": 282.963117182139,
+        "all_gates": 3,
+        "artifact_identity_and_metrics_verified": true
+      },
+      {
+        "run_id": "train_proposal_arb4",
+        "all_loss": 145.61467259694763,
+        "holdout_loss": 282.82360512195476,
+        "all_gates": 3,
+        "artifact_identity_and_metrics_verified": true
+      },
+      {
+        "run_id": "train_proposal_arb1",
+        "all_loss": 145.6146725687506,
+        "holdout_loss": 282.8236050710269,
+        "all_gates": 3,
+        "artifact_identity_and_metrics_verified": true
+      },
+      {
+        "run_id": "all_core",
+        "all_loss": 7.711416118569907,
+        "holdout_loss": 15.785833726279513,
+        "all_gates": 2,
+        "artifact_identity_and_metrics_verified": true
+      },
+      {
+        "run_id": "all_no_bump",
+        "all_loss": 43.55631004552761,
+        "holdout_loss": 109.69694737968432,
+        "all_gates": 2,
+        "artifact_identity_and_metrics_verified": true
+      },
+      {
+        "run_id": "all_proposal_arb4",
+        "all_loss": 13.01517036886755,
+        "holdout_loss": 24.602583217834596,
+        "all_gates": 2,
+        "artifact_identity_and_metrics_verified": true
+      },
+      {
+        "run_id": "all_proposal_arb1",
+        "all_loss": 43.46814176315266,
+        "holdout_loss": 110.02482844676967,
+        "all_gates": 2,
+        "artifact_identity_and_metrics_verified": true
+      },
+      {
+        "run_id": "all_arb4_whole",
+        "all_loss": 43.56987958866142,
+        "holdout_loss": 109.76178595197929,
+        "all_gates": 2,
+        "artifact_identity_and_metrics_verified": true
+      }
+    ],
+    "postprocessing_audit_present": true,
+    "protocol_capacity_review_VI_present": false,
+    "cadcad_verifications": 0,
+    "governance_binding": {
+      "files_sha256": {
+        "proposal_1164.json": "2eef11d39da8fd6a5faa94744d7a1e9bf8f1b205a47e9cab39e23ad8a27cc2d6",
+        "proposal_fetch.json": "4cf93180bd75f22d6b70139b972f6907dd127dfbd146ef22eed8bd84a0629c41",
+        "node_info.json": "fbb1bfc8574287ca5e9c41b7e4056ff984b69b932ca3cf8ce35a9b0edeea6ee7",
+        "node_fetch.json": "990c0eecb4f9122ec087dd48850a6e719047cbdcc11ba4d8c2820ff05cb93a69"
+      },
+      "proposal_status": "PROPOSAL_STATUS_PASSED",
+      "submit_time": "2022-05-11T07:45:19.205592562Z",
+      "voting_start_time": "2022-05-11T07:45:19.205592562Z",
+      "voting_end_time": "2022-05-18T07:45:19.205592562Z",
+      "changes": [
+        {
+          "subspace": "market",
+          "key": "BasePool",
+          "value": "\"100000000000000.000000000000000000\""
+        },
+        {
+          "subspace": "market",
+          "key": "PoolRecoveryPeriod",
+          "value": "\"18\""
+        }
+      ],
+      "provider_reported_network": "columbus-5",
+      "qualification": "Provider JSON plus tagged implementation; no signed historical state proof. Rejects proposal 1164 as evidence for May 11 activation; does not exclude a separate manual emergency parameter change."
+    },
+    "source_priority_conclusion": "Proposal 1164 enters execution through the expired active voting queue; its voting end is May 18, outside this May 6–15 event. It cannot support the model's May 11 automatic pool4/arb4 step. Removing the unverified step worsens the frozen fit; that is a fidelity/retuning problem, not historical evidence for retaining the step.",
+    "qualification": "Nine saved counterfactual probes, not promoted. May11 proposal variants are deliberately early activation; provider record plus tagged source is not a signed historical state proof and does not exclude manual emergency changes."
+  },
+  "missing_original_reports_are_not_marked_passed": true,
+  "audit_source_sha256": "3b91e74be9896469ed84600e9083705ab9087f8ae0dd151c39811f4704a56232"
+}

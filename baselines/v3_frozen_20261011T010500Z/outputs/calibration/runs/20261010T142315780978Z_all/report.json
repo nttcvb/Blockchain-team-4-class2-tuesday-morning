@@ -1,0 +1,712 @@
+{
+  "fit_split": "all",
+  "objective_version": "gate_phase_onset_native_v3_group_coverage_v1",
+  "calls": 460,
+  "objective": 7.711416118569907,
+  "objective_details": {
+    "loss": 7.711416118569907,
+    "gate_ratios": {
+      "ust_mae": 2.1639072806339255,
+      "deposit_nrmse": 1.2020139851895153,
+      "luna_price_log_rmse": 2.3625313406022066,
+      "luna_supply_log_rmse": 1.4002670430297908,
+      "group_mae_max": 0.998435302908375,
+      "depeg_error_hours": 0.125
+    },
+    "components": {
+      "global_gate": 2.933301504197696,
+      "phase_balanced": 3.379147591574151,
+      "worst_gate": 5.5815543353276595,
+      "onset": 0.03125,
+      "soft_depeg": 0.07450229012150912,
+      "native_daily_volume": 0.48675419358426386,
+      "native_fee": 1.2792942657695445
+    },
+    "phase_losses": {
+      "pre_depeg": 0.15298343743664972,
+      "run_before_may11": 3.32424867487262,
+      "post_may11": 6.660210662413183
+    }
+  },
+  "baseline_compare": {
+    "defaults": {
+      "loss": 3269.7497792457357,
+      "gate_ratios": {
+        "ust_mae": 7.1035916353923785,
+        "deposit_nrmse": 5.902198562792622,
+        "luna_price_log_rmse": 6.638273849172091,
+        "luna_supply_log_rmse": 4.388825568742958,
+        "group_mae_max": 2.995456592875948,
+        "depeg_error_hours": 39.916666666666664
+      },
+      "components": {
+        "global_gate": 31.519638353261165,
+        "phase_balanced": 29.691522399892744,
+        "worst_gate": 50.461014122416564,
+        "onset": 3186.680555555555,
+        "soft_depeg": 14.160121915770798,
+        "native_daily_volume": 2.04055408599575,
+        "native_fee": 2.325070023146793
+      },
+      "phase_losses": {
+        "pre_depeg": 0.40994322596961014,
+        "run_before_may11": 8.513806111747751,
+        "post_may11": 80.15081786196086
+      },
+      "parameters": {
+        "hazard_base": -11.0,
+        "hazard_size": 0.2,
+        "hazard_discount": 12.0,
+        "hazard_outflow": 18.0,
+        "hazard_luna": 2.0,
+        "hazard_queue": 3.0,
+        "sell_fraction": 0.92,
+        "ust_depth_usd": 30000000000.0,
+        "ust_depth_luna_beta": 1.0,
+        "ust_confidence_beta": 0.18,
+        "luna_depth_usd": 2000000000.0,
+        "luna_depth_growth": 0.8,
+        "luna_beta_btc": 1.3,
+        "luna_residual_bid_fraction": 0.08,
+        "arb_capacity_day": 300000000.0,
+        "arb_capital_usd": 150000000.0,
+        "base_pool_usd": 50000000.0,
+        "recovery_minutes": 3.6,
+        "min_spread": 0.005,
+        "market_cash_usd": 25000000000.0,
+        "external_ust_inventory": 4000000000.0,
+        "market_luna_inventory": 100000000.0,
+        "normal_demand_day": 25000000.0,
+        "redeposit_day": 0.015,
+        "oracle_lag_minutes": 1,
+        "btc_slippage": 0.003,
+        "btc_fee": 0.001,
+        "execution_fee": 0.001,
+        "reserve_income_day": 2000000.0,
+        "loan_repayment_days": 2.0,
+        "seed_shock_sell_fraction": 0.95
+      }
+    },
+    "warm_start": {
+      "loss": 12.400940211475742,
+      "gate_ratios": {
+        "ust_mae": 2.2346164134217377,
+        "deposit_nrmse": 1.462225330059207,
+        "luna_price_log_rmse": 2.8769465913810794,
+        "luna_supply_log_rmse": 1.9034877528390624,
+        "group_mae_max": 1.0889314542823125,
+        "depeg_error_hours": 0.9583333333333334
+      },
+      "components": {
+        "global_gate": 4.043494491598699,
+        "phase_balanced": 4.152945821980269,
+        "worst_gate": 8.276821689659212,
+        "onset": 1.8368055555555558,
+        "soft_depeg": 0.5135805880407505,
+        "native_daily_volume": 0.5527731314943781,
+        "native_fee": 1.351858279431781
+      },
+      "phase_losses": {
+        "pre_depeg": 0.5409465202171135,
+        "run_before_may11": 3.482312670969326,
+        "post_may11": 8.435578274754368
+      },
+      "parameters": {
+        "hazard_base": -11.237849791537254,
+        "hazard_size": 0.3562875402089596,
+        "hazard_discount": 160.39415659135724,
+        "hazard_outflow": 109.87974336125069,
+        "hazard_luna": 21.21424447506903,
+        "hazard_queue": 3.0,
+        "sell_fraction": 0.92,
+        "ust_depth_usd": 79792323367.39745,
+        "ust_depth_luna_beta": 0.20644588212168546,
+        "ust_confidence_beta": 0.4679620127323053,
+        "luna_depth_usd": 8290153711.216754,
+        "luna_depth_growth": 0.4527317533644277,
+        "luna_beta_btc": 2.566333107669855,
+        "luna_residual_bid_fraction": 0.19001057320013864,
+        "arb_capacity_day": 1067013123.7237465,
+        "arb_capital_usd": 150000000.0,
+        "base_pool_usd": 50000000.0,
+        "recovery_minutes": 3.6,
+        "min_spread": 0.005,
+        "market_cash_usd": 25000000000.0,
+        "external_ust_inventory": 4000000000.0,
+        "market_luna_inventory": 100000000.0,
+        "normal_demand_day": 25000000.0,
+        "redeposit_day": 0.015,
+        "oracle_lag_minutes": 1,
+        "btc_slippage": 0.003,
+        "btc_fee": 0.001,
+        "execution_fee": 0.001,
+        "reserve_income_day": 2000000.0,
+        "loan_repayment_days": 2.0,
+        "seed_shock_sell_fraction": 0.95
+      }
+    },
+    "search_start": {
+      "loss": 12.400940211475742,
+      "gate_ratios": {
+        "ust_mae": 2.2346164134217377,
+        "deposit_nrmse": 1.462225330059207,
+        "luna_price_log_rmse": 2.8769465913810794,
+        "luna_supply_log_rmse": 1.9034877528390624,
+        "group_mae_max": 1.0889314542823125,
+        "depeg_error_hours": 0.9583333333333334
+      },
+      "components": {
+        "global_gate": 4.043494491598699,
+        "phase_balanced": 4.152945821980269,
+        "worst_gate": 8.276821689659212,
+        "onset": 1.8368055555555558,
+        "soft_depeg": 0.5135805880407505,
+        "native_daily_volume": 0.5527731314943781,
+        "native_fee": 1.351858279431781
+      },
+      "phase_losses": {
+        "pre_depeg": 0.5409465202171135,
+        "run_before_may11": 3.482312670969326,
+        "post_may11": 8.435578274754368
+      },
+      "parameters": {
+        "hazard_base": -11.237849791537254,
+        "hazard_size": 0.3562875402089596,
+        "hazard_discount": 160.39415659135724,
+        "hazard_outflow": 109.87974336125069,
+        "hazard_luna": 21.21424447506903,
+        "hazard_queue": 3.0,
+        "sell_fraction": 0.92,
+        "ust_depth_usd": 79792323367.39745,
+        "ust_depth_luna_beta": 0.20644588212168546,
+        "ust_confidence_beta": 0.4679620127323053,
+        "luna_depth_usd": 8290153711.216754,
+        "luna_depth_growth": 0.4527317533644277,
+        "luna_beta_btc": 2.566333107669855,
+        "luna_residual_bid_fraction": 0.19001057320013864,
+        "arb_capacity_day": 1067013123.7237465,
+        "arb_capital_usd": 150000000.0,
+        "base_pool_usd": 50000000.0,
+        "recovery_minutes": 3.6,
+        "min_spread": 0.005,
+        "market_cash_usd": 25000000000.0,
+        "external_ust_inventory": 4000000000.0,
+        "market_luna_inventory": 100000000.0,
+        "normal_demand_day": 25000000.0,
+        "redeposit_day": 0.015,
+        "oracle_lag_minutes": 1,
+        "btc_slippage": 0.003,
+        "btc_fee": 0.001,
+        "execution_fee": 0.001,
+        "reserve_income_day": 2000000.0,
+        "loan_repayment_days": 2.0,
+        "seed_shock_sell_fraction": 0.95
+      }
+    }
+  },
+  "improvement_from_search_start": 4.6895240929058355,
+  "runtime_seconds": 1889.768522700062,
+  "provenance": {
+    "fit_split": "all",
+    "objective_version": "gate_phase_onset_native_v3_group_coverage_v1",
+    "source_sha256": {
+      "calibrate.py": "7aa5ff3453a39669c321657894a352194bdfba6b8b797f0b629c6bd34c4de583",
+      "engine.py": "0a89a9e690c7998d8fadaa1756466b6195b67219483320403672a441cd95f7ea",
+      "config.py": "610f1ed6cc25301c1ca22f9305c736e6f94229f25cfc3619ba447875c1f13662",
+      "data.py": "6331fab0b4e19fef798a6c6f593c3468ff36a17e5427e30c1dce3823a8b378e9",
+      "metrics.py": "c71e0345ca304bc22d025e15cd13a07c9d244b3659a1a2f2761508e67a1d48b9",
+      "data/sources.json": "2c9e3680e5c64a745090f6dc8ad0eecc2440d3da9ca6a9684e1a8b5894cbd359",
+      "data/external/btc_usdt_minute.parquet": "86ccb9bbcd9523d53c40b239f205f8628d5ad1780fe89e35ada46b2d5a218f3a",
+      "data/external/btc_metadata.json": "fa24b2bcfed763e896f071deda59f8269f01939ab04af9c4300a60f00f0f9856"
+    },
+    "target_sha256": "89e7a53d8d795cb48706657306144ee54e4306d667265520127cb31a3d59e4a9",
+    "group_sha256": "c606efc0cece8a608a4c1db7838854340069b37787da061d4c86f0c4a73f9865",
+    "search": [
+      [
+        "hazard_base",
+        -14.0,
+        -6.5
+      ],
+      [
+        "hazard_size",
+        0.0,
+        1.0
+      ],
+      [
+        "hazard_discount",
+        10.0,
+        250.0
+      ],
+      [
+        "hazard_outflow",
+        0.0,
+        120.0
+      ],
+      [
+        "hazard_luna",
+        0.0,
+        30.0
+      ],
+      [
+        "log_ust_depth",
+        9.0,
+        11.2
+      ],
+      [
+        "ust_depth_luna_beta",
+        0.0,
+        2.5
+      ],
+      [
+        "log_luna_depth",
+        7.5,
+        10.2
+      ],
+      [
+        "luna_depth_growth",
+        0.2,
+        1.1
+      ],
+      [
+        "log_arb_capacity",
+        8.0,
+        10.5
+      ],
+      [
+        "luna_beta_btc",
+        0.3,
+        5.0
+      ],
+      [
+        "ust_confidence_beta",
+        0.03,
+        1.5
+      ],
+      [
+        "luna_residual_bid_fraction",
+        0.005,
+        0.2
+      ]
+    ],
+    "fixed_parameters": {
+      "hazard_queue": 3.0,
+      "sell_fraction": 0.92,
+      "arb_capital_usd": 150000000.0,
+      "base_pool_usd": 50000000.0,
+      "recovery_minutes": 3.6,
+      "min_spread": 0.005,
+      "market_cash_usd": 25000000000.0,
+      "external_ust_inventory": 4000000000.0,
+      "market_luna_inventory": 100000000.0,
+      "normal_demand_day": 25000000.0,
+      "redeposit_day": 0.015,
+      "oracle_lag_minutes": 1,
+      "btc_slippage": 0.003,
+      "btc_fee": 0.001,
+      "execution_fee": 0.001,
+      "reserve_income_day": 2000000.0,
+      "loan_repayment_days": 2.0,
+      "seed_shock_sell_fraction": 0.95
+    },
+    "scenario": {
+      "name": "historical",
+      "mode": "historical",
+      "start": "2022-05-06T00:15:00Z",
+      "end": "2022-05-16T00:00:00Z",
+      "dt_minutes": 15,
+      "n_depositors": 1000,
+      "n_arbitrageurs": 20,
+      "seed": 42,
+      "stochastic": false,
+      "funding_timing": "early",
+      "stress_days": 0,
+      "params": {
+        "hazard_base": -11.0,
+        "hazard_size": 0.2,
+        "hazard_discount": 12.0,
+        "hazard_outflow": 18.0,
+        "hazard_luna": 2.0,
+        "hazard_queue": 3.0,
+        "sell_fraction": 0.92,
+        "ust_depth_usd": 30000000000.0,
+        "ust_depth_luna_beta": 1.0,
+        "ust_confidence_beta": 0.18,
+        "luna_depth_usd": 2000000000.0,
+        "luna_depth_growth": 0.8,
+        "luna_beta_btc": 1.3,
+        "luna_residual_bid_fraction": 0.08,
+        "arb_capacity_day": 300000000.0,
+        "arb_capital_usd": 150000000.0,
+        "base_pool_usd": 50000000.0,
+        "recovery_minutes": 3.6,
+        "min_spread": 0.005,
+        "market_cash_usd": 25000000000.0,
+        "external_ust_inventory": 4000000000.0,
+        "market_luna_inventory": 100000000.0,
+        "normal_demand_day": 25000000.0,
+        "redeposit_day": 0.015,
+        "oracle_lag_minutes": 1,
+        "btc_slippage": 0.003,
+        "btc_fee": 0.001,
+        "execution_fee": 0.001,
+        "reserve_income_day": 2000000.0,
+        "loan_repayment_days": 2.0,
+        "seed_shock_sell_fraction": 0.95
+      },
+      "policies": []
+    },
+    "fit_start": "2022-05-06 00:15:00+00:00",
+    "fit_end": "2022-05-15 23:45:00+00:00",
+    "gates": {
+      "ust_mae": 0.05,
+      "deposit_nrmse": 0.1,
+      "luna_price_log_rmse": 0.5,
+      "luna_supply_log_rmse": 0.5,
+      "group_mae_max": 0.15,
+      "depeg_error_hours": 6.0
+    }
+  },
+  "optimizer": {
+    "broad_search_success": false,
+    "broad_search_message": "Maximum number of iterations has been exceeded.",
+    "refinement": {
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "evaluations": 446
+    },
+    "run_id": "20261010T142315780978Z_all",
+    "workers": 1,
+    "seed": 42,
+    "initializer": "hybrid_latin_hypercube_gaussian",
+    "local_fraction": 0.25,
+    "local_scale": 0.03,
+    "simplex_step": 0.02,
+    "initial_population_size": 13
+  },
+  "train": {
+    "ust_mae": 0.016337804679278752,
+    "deposit_nrmse": 0.1554316125817256,
+    "luna_price_log_rmse": 0.11348817316510029,
+    "luna_supply_log_rmse": 0.0017700030652303125,
+    "group_mae_max": 0.16294754100452588,
+    "group_metrics": [
+      {
+        "group": 0,
+        "label": "<1K",
+        "mae": 0.05043225991047326,
+        "paired_count": 479,
+        "observed_count": 479,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-10T23:45:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-10T23:45:00+00:00"
+      },
+      {
+        "group": 1,
+        "label": "1K–10K",
+        "mae": 0.034290024013142094,
+        "paired_count": 479,
+        "observed_count": 479,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-10T23:45:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-10T23:45:00+00:00"
+      },
+      {
+        "group": 2,
+        "label": "10K–100K",
+        "mae": 0.04723677470468952,
+        "paired_count": 479,
+        "observed_count": 479,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-10T23:45:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-10T23:45:00+00:00"
+      },
+      {
+        "group": 3,
+        "label": "100K–1M",
+        "mae": 0.06397975984222977,
+        "paired_count": 479,
+        "observed_count": 479,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-10T23:45:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-10T23:45:00+00:00"
+      },
+      {
+        "group": 4,
+        "label": "1M–10M",
+        "mae": 0.16294754100452588,
+        "paired_count": 479,
+        "observed_count": 479,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-10T23:45:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-10T23:45:00+00:00"
+      },
+      {
+        "group": 5,
+        "label": ">10M",
+        "mae": 0.12793153717070677,
+        "paired_count": 479,
+        "observed_count": 479,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-10T23:45:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-10T23:45:00+00:00"
+      }
+    ],
+    "group_paired_count": 2874,
+    "group_observed_count": 2874,
+    "depeg_error_hours": 0.75,
+    "predicted_depeg_utc": "2022-05-09T19:00:00+00:00",
+    "observed_depeg_utc": "2022-05-09T18:15:00+00:00",
+    "depeg_signed_error_hours": 0.75,
+    "gates": {
+      "ust_mae": true,
+      "deposit_nrmse": false,
+      "luna_price_log_rmse": true,
+      "luna_supply_log_rmse": true,
+      "group_mae_max": false,
+      "depeg_error_hours": true
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 1470749338.30292,
+    "native_ust_simulated_total": 1455509150.4137414,
+    "native_daily_nrmse": 0.0910376606480001,
+    "native_fee_mae": 0.013112513140541949
+  },
+  "validation": {
+    "ust_mae": 0.19986155346879633,
+    "deposit_nrmse": 0.06897823323001466,
+    "luna_price_log_rmse": 1.665838340023979,
+    "luna_supply_log_rmse": 0.9896209106044177,
+    "group_mae_max": 0.20291234334299005,
+    "group_metrics": [
+      {
+        "group": 0,
+        "label": "<1K",
+        "mae": 0.09576233217593765,
+        "paired_count": 289,
+        "observed_count": 289,
+        "observed_start_utc": "2022-05-11T00:00:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-11T00:00:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 1,
+        "label": "1K–10K",
+        "mae": 0.10778077658401025,
+        "paired_count": 289,
+        "observed_count": 289,
+        "observed_start_utc": "2022-05-11T00:00:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-11T00:00:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 2,
+        "label": "10K–100K",
+        "mae": 0.18181900665990916,
+        "paired_count": 289,
+        "observed_count": 289,
+        "observed_start_utc": "2022-05-11T00:00:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-11T00:00:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 3,
+        "label": "100K–1M",
+        "mae": 0.20291234334299005,
+        "paired_count": 289,
+        "observed_count": 289,
+        "observed_start_utc": "2022-05-11T00:00:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-11T00:00:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 4,
+        "label": "1M–10M",
+        "mae": 0.12791652163971245,
+        "paired_count": 289,
+        "observed_count": 289,
+        "observed_start_utc": "2022-05-11T00:00:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-11T00:00:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 5,
+        "label": ">10M",
+        "mae": 0.12513023939388787,
+        "paired_count": 289,
+        "observed_count": 289,
+        "observed_start_utc": "2022-05-11T00:00:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-11T00:00:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      }
+    ],
+    "group_paired_count": 1734,
+    "group_observed_count": 1734,
+    "depeg_error_hours": 0.75,
+    "predicted_depeg_utc": "2022-05-09T19:00:00+00:00",
+    "observed_depeg_utc": "2022-05-09T18:15:00+00:00",
+    "depeg_signed_error_hours": 0.75,
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": true,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": false,
+      "group_mae_max": false,
+      "depeg_error_hours": true
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 6019922142.086021,
+    "native_ust_simulated_total": 4504376571.063803,
+    "native_daily_nrmse": 0.24522577846460414,
+    "native_fee_mae": 0.1585307460000052
+  },
+  "all": {
+    "ust_mae": 0.10819536403169629,
+    "deposit_nrmse": 0.12020139851895154,
+    "luna_price_log_rmse": 1.1812656703011033,
+    "luna_supply_log_rmse": 0.7001335215148954,
+    "group_mae_max": 0.14976529543625625,
+    "group_metrics": [
+      {
+        "group": 0,
+        "label": "<1K",
+        "mae": 0.06749006054161806,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 1,
+        "label": "1K–10K",
+        "mae": 0.06194474731129431,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 2,
+        "label": "10K–100K",
+        "mae": 0.09788034896908858,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 3,
+        "label": "100K–1M",
+        "mae": 0.11626038045644815,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 4,
+        "label": "1M–10M",
+        "mae": 0.14976529543625625,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      },
+      {
+        "group": 5,
+        "label": ">10M",
+        "mae": 0.1268774029812528,
+        "paired_count": 768,
+        "observed_count": 768,
+        "observed_start_utc": "2022-05-06T00:15:00+00:00",
+        "observed_end_utc": "2022-05-14T00:00:00+00:00",
+        "paired_start_utc": "2022-05-06T00:15:00+00:00",
+        "paired_end_utc": "2022-05-14T00:00:00+00:00"
+      }
+    ],
+    "group_paired_count": 4608,
+    "group_observed_count": 4608,
+    "depeg_error_hours": 0.75,
+    "predicted_depeg_utc": "2022-05-09T19:00:00+00:00",
+    "observed_depeg_utc": "2022-05-09T18:15:00+00:00",
+    "depeg_signed_error_hours": 0.75,
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": false,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": false,
+      "group_mae_max": true,
+      "depeg_error_hours": true
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 7490671480.388943,
+    "native_ust_simulated_total": 5959885721.477544,
+    "native_daily_nrmse": 0.17441942867414884,
+    "native_fee_mae": 0.06234264405650607
+  },
+  "financial_metrics": {
+    "classification": "Không đạt tiêu chí cứu vãn",
+    "rescued": false,
+    "peg_hours_longest": 42.25,
+    "operational_hours_longest": 42.25,
+    "stress_tail_verified": false,
+    "support_spent_usd": 2091480810.0000093,
+    "support_remaining_usd": 1093260509.8617795,
+    "btc_sold": 45027.829847104425,
+    "tfl_own_contribution_usd": 613616889.0,
+    "final_ust_price": 0.0007160285439287463,
+    "min_ust_price": 1.1649943703430687e-05,
+    "final_luna_price": 0.008352996139699491,
+    "final_luna_supply": 453537717328.46936,
+    "final_anchor_deposits": 426229581.1502965,
+    "final_withdraw_queue": 426227532.723887,
+    "depositor_loss_fraction": 0.22193628686510647,
+    "withdraw_service_ratio": 0.9697529781683403,
+    "native_service_ratio": 1.0,
+    "max_accounting_errors": {
+      "ust_error": 0.0019969940185546875,
+      "luna_error": 0.0001220703125,
+      "usd_error": 0.0002899169921875,
+      "claim_error": 1.9073486328125e-05
+    },
+    "historical_execution_gap_usd": 2.384185791015625e-07,
+    "qualification": "Conditional financial experiment; validator security and exact exchange/Jump execution are outside the model.",
+    "runtime_seconds": 5.75500819995068,
+    "engine": "cadcad",
+    "seed": 42,
+    "engine_source_sha256": "0a89a9e690c7998d8fadaa1756466b6195b67219483320403672a441cd95f7ea"
+  },
+  "validation_is_parameter_holdout": false,
+  "structural_validation_is_independent": false,
+  "reference_funding_timing": "early",
+  "source_sha256": "0a89a9e690c7998d8fadaa1756466b6195b67219483320403672a441cd95f7ea",
+  "parameter_sha256": "9c142b3d03a131a55d5382a1d19b5aa7efbfaef2227a13a7da1a20cfd9a2c6ed",
+  "fast_cadcad_equivalence_verified": true,
+  "limitations": [
+    "Liquidity and behavioral parameters are not uniquely identified.",
+    "Only train fitting provides a temporal parameter holdout; full fit uses all event targets.",
+    "Historical replay is resource constrained, not exact Jump/TFL execution.",
+    "Failed fidelity gates make policy results exploratory, not historical causal evidence."
+  ]
+}

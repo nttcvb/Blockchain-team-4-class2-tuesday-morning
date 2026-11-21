@@ -1,0 +1,48 @@
+{
+  "ust_mae_between_steps": 0.05297676394318245,
+  "deposit_nrmse_between_steps": 0.08994755141997542,
+  "luna_log_rmse_between_steps": 1.4692503426164931,
+  "15min_fit": {
+    "ust_mae": 0.0908884800368092,
+    "deposit_nrmse": 0.11129608367845766,
+    "luna_price_log_rmse": 0.8613387705456296,
+    "luna_supply_log_rmse": 0.4195829199066918,
+    "group_mae_max": 0.14482730265843943,
+    "depeg_error_hours": 47.25,
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": false,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": true,
+      "group_mae_max": true,
+      "depeg_error_hours": false
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 7490671480.388943,
+    "native_ust_simulated_total": 6499035606.12076,
+    "native_daily_nrmse": 0.3030741936165176,
+    "native_fee_mae": 0.05740627509870998
+  },
+  "5min_fit": {
+    "ust_mae": 0.12757873580795998,
+    "deposit_nrmse": 0.12695046284959327,
+    "luna_price_log_rmse": 1.0790713514843049,
+    "luna_supply_log_rmse": 0.6309277688532466,
+    "group_mae_max": 0.1438125447234184,
+    "depeg_error_hours": 49.333333333333336,
+    "gates": {
+      "ust_mae": false,
+      "deposit_nrmse": false,
+      "luna_price_log_rmse": false,
+      "luna_supply_log_rmse": false,
+      "group_mae_max": true,
+      "depeg_error_hours": false
+    },
+    "passes_all": false,
+    "native_ust_observed_total": 7490671480.388942,
+    "native_ust_simulated_total": 6268694494.653099,
+    "native_daily_nrmse": 0.1308014794535758,
+    "native_fee_mae": 0.06819869937559946
+  },
+  "note": "A large discrepancy means event ordering/coarse time resolution affects policy conclusions."
+}

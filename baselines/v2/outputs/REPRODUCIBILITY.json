@@ -1,0 +1,245 @@
+{
+  "created_utc": "2026-10-09T00:56:41.351748+00:00",
+  "python": "3.12.1",
+  "versions": {
+    "cadCAD": "0.5.3",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "scipy": "1.17.1",
+    "plotly": "6.6.0",
+    "streamlit": "1.65.0",
+    "pytest": "9.0.2"
+  },
+  "runs": 140,
+  "seeds_per_scenario": {
+    "buy_ust": 20,
+    "combined": 20,
+    "historical": 20,
+    "liquidity": 20,
+    "native_swap": 20,
+    "no_rescue": 20,
+    "withdrawal_gate": 20
+  },
+  "rescue_counts": {
+    "buy_ust": 0,
+    "combined": 0,
+    "historical": 0,
+    "liquidity": 0,
+    "native_swap": 0,
+    "no_rescue": 0,
+    "withdrawal_gate": 0
+  },
+  "sensitivity_settings": 22,
+  "timestep_check": {
+    "ust_mae_between_steps": 0.05297676394318245,
+    "deposit_nrmse_between_steps": 0.08994755141997542,
+    "luna_log_rmse_between_steps": 1.4692503426164931,
+    "15min_fit": {
+      "ust_mae": 0.0908884800368092,
+      "deposit_nrmse": 0.11129608367845766,
+      "luna_price_log_rmse": 0.8613387705456296,
+      "luna_supply_log_rmse": 0.4195829199066918,
+      "group_mae_max": 0.14482730265843943,
+      "depeg_error_hours": 47.25,
+      "gates": {
+        "ust_mae": false,
+        "deposit_nrmse": false,
+        "luna_price_log_rmse": false,
+        "luna_supply_log_rmse": true,
+        "group_mae_max": true,
+        "depeg_error_hours": false
+      },
+      "passes_all": false,
+      "native_ust_observed_total": 7490671480.388943,
+      "native_ust_simulated_total": 6499035606.12076,
+      "native_daily_nrmse": 0.3030741936165176,
+      "native_fee_mae": 0.05740627509870998
+    },
+    "5min_fit": {
+      "ust_mae": 0.12757873580795998,
+      "deposit_nrmse": 0.12695046284959327,
+      "luna_price_log_rmse": 1.0790713514843049,
+      "luna_supply_log_rmse": 0.6309277688532466,
+      "group_mae_max": 0.1438125447234184,
+      "depeg_error_hours": 49.333333333333336,
+      "gates": {
+        "ust_mae": false,
+        "deposit_nrmse": false,
+        "luna_price_log_rmse": false,
+        "luna_supply_log_rmse": false,
+        "group_mae_max": true,
+        "depeg_error_hours": false
+      },
+      "passes_all": false,
+      "native_ust_observed_total": 7490671480.388942,
+      "native_ust_simulated_total": 6268694494.653099,
+      "native_daily_nrmse": 0.1308014794535758,
+      "native_fee_mae": 0.06819869937559946
+    },
+    "note": "A large discrepancy means event ordering/coarse time resolution affects policy conclusions."
+  },
+  "traces": {
+    "buy_ust": {
+      "rows": 1631,
+      "tail_rows": 672,
+      "max_absolute_accounting_errors": {
+        "ust_error": 0.0003414154052734375,
+        "luna_error": 7.62939453125e-06,
+        "usd_error": 2.288818359375e-05,
+        "claim_error": 1.71661376953125e-05
+      }
+    },
+    "combined": {
+      "rows": 1631,
+      "tail_rows": 672,
+      "max_absolute_accounting_errors": {
+        "ust_error": 0.00011444091796875,
+        "luna_error": 3.814697265625e-06,
+        "usd_error": 5.7220458984375e-05,
+        "claim_error": 1.33514404296875e-05
+      }
+    },
+    "historical": {
+      "rows": 1631,
+      "tail_rows": 672,
+      "max_absolute_accounting_errors": {
+        "ust_error": 0.000148773193359375,
+        "luna_error": 0.00048828125,
+        "usd_error": 0.000652313232421875,
+        "claim_error": 1.33514404296875e-05
+      }
+    },
+    "liquidity": {
+      "rows": 1631,
+      "tail_rows": 672,
+      "max_absolute_accounting_errors": {
+        "ust_error": 0.0003261566162109375,
+        "luna_error": 1.52587890625e-05,
+        "usd_error": 4.9591064453125e-05,
+        "claim_error": 1.71661376953125e-05
+      }
+    },
+    "native_swap": {
+      "rows": 1631,
+      "tail_rows": 672,
+      "max_absolute_accounting_errors": {
+        "ust_error": 0.000171661376953125,
+        "luna_error": 0.0001220703125,
+        "usd_error": 2.6702880859375e-05,
+        "claim_error": 3.814697265625e-05
+      }
+    },
+    "no_rescue": {
+      "rows": 1631,
+      "tail_rows": 672,
+      "max_absolute_accounting_errors": {
+        "ust_error": 0.00025177001953125,
+        "luna_error": 1.9073486328125e-06,
+        "usd_error": 3.0517578125e-05,
+        "claim_error": 1.33514404296875e-05
+      }
+    },
+    "withdrawal_gate": {
+      "rows": 1631,
+      "tail_rows": 672,
+      "max_absolute_accounting_errors": {
+        "ust_error": 0.000324249267578125,
+        "luna_error": 7.62939453125e-06,
+        "usd_error": 4.57763671875e-05,
+        "claim_error": 2.6702880859375e-05
+      }
+    }
+  },
+  "files_sha256": {
+    "luna_sim\\audit.py": "defc06f0dc31a25da31592aa767bc876736994a6b4851f92a55eb159a4dfbef2",
+    "luna_sim\\calibrate.py": "6167c2489906b86c15e28d59c0ab74ed9f9e231ae1cb7604907216aac44e7264",
+    "luna_sim\\cli.py": "850fdc1d7a299e757c133cc4a69c38bafb9540d7273a61de60f1a85a916588fb",
+    "luna_sim\\config.py": "610f1ed6cc25301c1ca22f9305c736e6f94229f25cfc3619ba447875c1f13662",
+    "luna_sim\\data.py": "adbe0a221e8c0bd998137e5b98928c7ba54c21f478501762c1b0dd234b589e0b",
+    "luna_sim\\diagnostics.py": "2e9e79679e2225149b5f42101a5195fd5a6696b48002582e5d7d7ba0b3347382",
+    "luna_sim\\engine.py": "407acc5169a441b950684987291cf4b5bf809f8f74f1b5f1bd9a2fc6427d82b7",
+    "luna_sim\\experiments.py": "9225fdc6225e22ce20039d11a7c582cf5bd9fb883fc835f359deb340a7c7e2fa",
+    "luna_sim\\metrics.py": "ba1fbfa649b5af9e4c6874891286ceabb4dd1f65f451730ea55fdfa80b88b32b",
+    "luna_sim\\report.py": "46146cf51265782e2b0b1cd89f8e79bec0aa2d408b2e74d44bcdd85adb4cffe9",
+    "luna_sim\\__init__.py": "9fa989fd1cf1da61a4b2a2f193811435c12600e018dbb34e2b0844a6935863ec",
+    "app.py": "accff745af345a274ee0fe88fd5ff300018700169509911accf75eaee47038a2",
+    "pyproject.toml": "5c1a39b51a7e0b030b6353c3f2e81232a34648fda730bc84ef970a3ac79e5d2e",
+    "data\\sources.json": "bd85b2b041d9793e644af6bc86754f61c7e330b2b35c9ac32e795306aec17e26",
+    "outputs\\calibration\\best_all.json": "00e9c3bff7bba8dff9c0f676ff2214c5c4eacab1b0e3a7aa5e8494bc2e396248",
+    "outputs\\calibration\\best_train.json": "31e5e09e951d2a3caa8a26874004488a9ab545c2b0b1b4032f1fae08fb296823",
+    "outputs\\calibration\\candidate_all.json": "d2e512f4a1e4b5074b6c1eed26f2dd4435fe18fbfbc866b8409723e90ba38ade",
+    "outputs\\calibration\\config_all.json": "a3941f9c237b59ad5e8577f3e76b48cfabaf666f76b65e684a87496fe89c54b0",
+    "outputs\\calibration\\config_train.json": "e599e237deda6dc7527719e2c2d202e893891fc8d839cd1342a7e583af5b8cdc",
+    "outputs\\calibration\\diagnostics.json": "154837fcd694084eb8f4a1f6d122d545cacb47b9cbf0078b195c7c4fe6436f22",
+    "outputs\\calibration\\parameters.json": "1cd8b7cfb21921e78b795ee6e1aabb30f6afe7b911a3306abaf4b48f00b40283",
+    "outputs\\calibration\\parameters_full_fit.json": "0ff4cdcf5ddbd1838b47bea56bb5e4667907f714690e8679e6ddbea7a4b16be8",
+    "outputs\\calibration\\report_all.json": "4ed5dc923dbcc16a12eea942ccf45e4325f77a76192500da25b3c1bb55134f9a",
+    "outputs\\calibration\\report_train.json": "c7f405d3a42b0fc2fb9ee8d153b3f69a724a44db28ddc41cfb31613455e2711d",
+    "data\\processed\\event_timeline.csv": "717ef0a0b4f6f362685e6cf99448a32709e422b775f335e9d63df75479c8783b",
+    "data\\processed\\groups_15min.parquet": "9949a95381c9e2e1146dc31da5a2802f7086ea2cec2c849bd75934232ce71bef",
+    "data\\processed\\historical_15min.parquet": "031679275e44a0f9f3a408d51a44c26e25e20e66ec37abaad045112ac74f315e",
+    "data\\processed\\initial_facts.json": "5d88879fc536bf4ddc8da5e4b9a23c49711bad69acaf4e5af197a0f315d36350",
+    "data\\processed\\population.parquet": "97a0830dcd36cc7bab813f4fd541952d076b1cc22a31ef490fd357d4bf38365b",
+    "data\\processed\\quality_report.json": "aaf69bf03103280ce5b8eba51a16fb6eeb42dc3628be1e8bf26dfa42c56f12f2",
+    "data\\external\\btc_metadata.json": "fa24b2bcfed763e896f071deda59f8269f01939ab04af9c4300a60f00f0f9856",
+    "data\\external\\btc_usdt_minute.parquet": "86ccb9bbcd9523d53c40b239f205f8628d5ad1780fe89e35ada46b2d5a218f3a",
+    "data\\external\\LFG-Audit-2022-11-14.pdf": "9207017b7d097064bfb1ca96beeafb116a4cd6f191f54b7c0b135cc2f63a56e9",
+    "data\\external\\lfg_audit.txt": "28c370d848c157453213e7abf11fd3680817365df309098f173d450fb3ebabfc",
+    "tests\\test_dashboard.py": "7b25caa813ff707900639ccf11c9a7475087095e37d24462ea47e0415235c420",
+    "tests\\test_model.py": "92dc97084be8db36cc30e490412fb74ff9a24da52a7cd02d9b7a455be3b48bbd",
+    ".streamlit\\config.toml": "292d43ce3237d301998969ef81d8a9ff3586aa6500636f054444374e025a5483",
+    "Start.ps1": "15148c5f508795d2969555279e681e845eba787dab2e569904ede4592f89331c",
+    "requirements-tested.txt": "7e6b33e822ead6b73184cb4e4629d484d320b7c4179aeba53792ef4157857563",
+    "outputs\\test-results.xml": "b965bc4012fd2d02dd381f413caede5955aa8d62b7f727e37c5a74704474ee57",
+    "PLAN_APPROVED.md": "12564334288dc2c9e50e6f0c725ec268f5d86fcb313c48811dad5940eb8e1170",
+    "MODEL_SPEC.md": "3b8f84a8c042ceb4efbb37b63a3a837ea6ce786182ae6f95e09792cd66390195",
+    "README.md": "149725766f031a28ba92160aa748ae17ff21ab5c6cec67db2c771c9bd53ddb82",
+    "DEMO_VI.md": "43b2085b09fea47604c07f69570aca6dcb204c39ab24861c07abaaf997d10100",
+    "outputs\\dashboard-final-tests.xml": "91154f9c933c99ed4dc6da81d4a8ff892d17af489a1cf1c9732e1e227e43223c",
+    "outputs\\REPORT_VI.md": "6ab3bcaadf25bea55a9562439817df018f6428dcaa49d7b17dfd35f24694628d",
+    "outputs\\historical_comparison.html": "574e20ef31b591ffefa988313c9b14e79151a6982a63ceff856a0f79170600fa",
+    "outputs\\dashboard-proof.jpg": "6493ce512a1fc48f3d7119d47f290763f442088d809374492e5aba9e507d3bd3",
+    "outputs\\COMPLETION_AUDIT.md": "94d4b0c54a5eb77300427d663b45577318328121b4dc3ccf77c04ba690e97dd9",
+    "outputs\\experiments\\bands.parquet": "4212cbc94aa3624bf6753dde4ba449cbc7c54337c189dc0da0cfcc1fb4ff0882",
+    "outputs\\experiments\\execution_metadata.json": "72e942fa597686cad75779340c222e8b0d3f74389698889754e8a6345867ec5a",
+    "outputs\\experiments\\runs.csv": "130ba714c22b417b722e128172ce0b4faa84a9104c3fd3136ca69d77d5e41c90",
+    "outputs\\experiments\\sensitivity.csv": "57e7a8d5a6f98d5d3b84aaa90460c4ff6c03622e08058c46a133b8d4fb3e6b26",
+    "outputs\\experiments\\summary.csv": "1df9fadf8ac2e521a7667950d450117c1f0375914695b8483bafa448ff003355",
+    "outputs\\experiments\\timestep_check.json": "5c9d891f38505f023b1f3ddc9fd3d030d56f7c23eb26f0c8a690218acac60a68"
+  },
+  "input_files_sha256": {
+    "data\\anchor\\anchor_cashflow_transfers.parquet": "ad59acc38e823686ea9ba630d57b487f29916920863d7770cf668041b8a59874",
+    "data\\anchor\\Anchor_daily_stats.parquet": "046f939acf1e3df422f80685a867d52fbaf6c96382f7f32f98f88f371861d7bd",
+    "data\\anchor\\anchor_deposit_concentration.parquet": "8717912cb4800b2aa471474bd9d4cefa405b7827914331c0037cc31f29068651",
+    "data\\anchor\\Anchor_global_stats_fullnode.parquet": "7e6aaf79bdc5865fb5b45b2a9cb970ec46c1d4e0a8826005153e5c2eaa9601d9",
+    "data\\anchor\\aust_rnk_col5.parquet": "615fe99aa8df790d23444b766c4c5ffe321b2578a24c0cd57e801b801b43ffea",
+    "data\\anchor\\aust_supply_col5.parquet": "dc06700e0cc729c33dff74c964b6c7503496866832b6063e7e426cfc0c97491c",
+    "data\\anchor\\aust_topk_col4.parquet": "ad4a75cf6e52fbbe6bf896bd22c2d9646ec4766d01c7eb93ec86c42e48247373",
+    "data\\anchor\\luna_staking_stats.parquet": "1f47eefe6daf1c5a2ca7ec92b167ab50026d24e24b16aa2fe1ba784a5d033a39",
+    "data\\anchor\\prerun_deposits.parquet": "5d334af3077d9c5678e377d289aa13703bbe79246ced82ebffe70cbec36a7842",
+    "data\\anchor_run\\anchor_run_tx_cleaned.parquet": "a62d35b3f7d32996425ddd1506951061d0e57ace9d2ad8df5c6d20ed300587ce",
+    "data\\anchor_run\\epoch_state_fig10.parquet": "29e6cb98fe7a3631e67f6e7e42289c1b11a1fc63a54255242e83367711774074",
+    "data\\anchor_run\\may2021_aust_run_balances.parquet": "2e7f8fc682fb26c8c6a2299404504ee65c31bd862104cf78cb7320afd0472053",
+    "data\\anchor_run\\may21_anchor_run_prices.parquet": "c2df4adff96720cb3af03fec58471fcc2ec5639675ea31e1ebeea1a883491a0a",
+    "data\\anchor_run\\run_aust_flow_by_depositor.parquet": "89c0f7e108c86844e3caa25830f9bdc97d1ccad98d915bd325ebc8dda6953043",
+    "data\\curve\\curve_ust_3pool_may7.parquet": "40adfe729e1cb039aab46798ebd95a9338be215e9f8f5ac330aec7e3a0ae26bf",
+    "data\\curve\\curve_ust_may2021.parquet": "6ddd99260568095be7dfbcdd7544c430a9c49a6cba5a6c27144d55d9fc096f50",
+    "data\\daily_balances\\columbus-4-lunaust-supply-breakdown-fullnode.parquet": "4d97eb79eb28bfea76d28c7b08c5a9c7cc65f5d017d967960124bfc35f27dcf3",
+    "data\\daily_balances\\columbus-5-lunaust-supply-breakdown-fullnode.parquet": "c23cc9dbb40ea7cf77811bc16a20352a572f36a1b7765376eda12699282f114b",
+    "data\\exchange\\binance_ustusdt_may7.parquet": "3542b63ca0d4d0db4a80d32e302193cc2c0b1611c25cf17ba7c258f62d61166e",
+    "data\\hazard\\survival_may6_12.parquet": "e962528069d9a0230a2bd4d3b90dc4e51c4fe97989b5a785647e6873e78d6104",
+    "data\\hazard\\timecox_cum_may6_12.parquet": "7d08de87b7c588eacd25c96bee7ce3b2c94d283e31c7e21d99f928179d20629a",
+    "data\\hazard\\ust_discount_may6_12.parquet": "692b232078fb8d6ce9e635846cf47e6a93f38f5fe77ce2d36b39551b527e9155",
+    "data\\labels\\interdm_addresses.parquet": "621aaa01d1e941c5a4cb228076bfa80e53b6fd5c8a9a8644db658bbeee32f7ac",
+    "data\\labels\\terra_labels_4vol.parquet": "93fd49edf63723a1c40242e0cb926137ae21b2c2dac1d34f6ba5e4bc362f8634",
+    "data\\loss\\anchor_loss_panel.parquet": "437d2ea16be066833ae03bb97c3437baae4fabed8caa5ffd1d81bac679ceb4ea",
+    "data\\loss\\depositor_prerun_size.parquet": "f5939f73c69e2d73e73919f1a8e5db191ab68952d8b3d1ad846abd16f273dfb9",
+    "data\\native_swaps\\luna_total_supply_run.parquet": "db340cb1cbdc8fb94d232fe114c990b11a047488ac6d4a61ba622edf99a173a1",
+    "data\\native_swaps\\ust_luna_swaps_run.parquet": "ecd470c77c314a79fb784f85b436f62e69f636343abd8ab98e6ad60c9347d124",
+    "data\\prices\\luna_price_may2022.parquet": "2007339f3436f3b4690a6cfd3fa9bf324d2586eca081cdacaea5a42244027465",
+    "data\\prices\\ust_luna_minute_price_run.parquet": "5f61b579ab88b5c64bed7a1808e900c5d377d805761e4c8ee58f612db7522afd",
+    "data\\prices\\ust_price_may2022.parquet": "043c03404a9e53c352df645e192a360b30ce6f853d2006fdec298e950ecdd869"
+  },
+  "qualification": "Fidelity gates fail. These are reproducible exploratory policy experiments, not causal evidence of a historical rescue."
+}

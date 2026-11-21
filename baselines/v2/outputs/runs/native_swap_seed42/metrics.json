@@ -1,0 +1,33 @@
+{
+  "classification": "Không đạt tiêu chí cứu vãn",
+  "rescued": false,
+  "peg_hours_longest": 0.0,
+  "operational_hours_longest": 0.0,
+  "stress_tail_verified": false,
+  "support_spent_usd": 0.0,
+  "support_remaining_usd": 3162267594.72964,
+  "btc_sold": 0.0,
+  "tfl_own_contribution_usd": 613616889.0,
+  "final_ust_price": 0.030473322460894604,
+  "min_ust_price": 0.0003181043320028282,
+  "final_luna_price": 0.0016341580466091568,
+  "final_luna_supply": 739949024805.9388,
+  "final_anchor_deposits": 49302968.91492773,
+  "final_withdraw_queue": 0.0,
+  "depositor_loss_fraction": 0.23833720577344353,
+  "withdraw_service_ratio": 1.0,
+  "native_service_ratio": 0.9999848126068016,
+  "max_accounting_errors": {
+    "ust_error": 0.000171661376953125,
+    "luna_error": 0.0001220703125,
+    "usd_error": 2.6702880859375e-05,
+    "claim_error": 3.814697265625e-05
+  },
+  "historical_execution_gap_usd": 0.0,
+  "qualification": "Conditional financial experiment; validator security and exact exchange/Jump execution are outside the model.",
+  "runtime_seconds": 4.20749869995052,
+  "engine": "cadcad",
+  "seed": 42,
+  "engine_source_sha256": "407acc5169a441b950684987291cf4b5bf809f8f74f1b5f1bd9a2fc6427d82b7",
+  "scenario": "native_swap"
+}

@@ -1,0 +1,36 @@
+{
+  "source_directory": "D:\\New folder\\terra-luna-run-replication (1)\\terra-luna-run-replication",
+  "time_zone": "UTC",
+  "initial_facts": {
+    "anchor_deposits": 14053780588.686373,
+    "anchor_cash": 11083222058.710274,
+    "loan_balance": 2970558529.976099,
+    "anchor_reserve": 190656691.337347,
+    "deposit_apr": 0.16751430358083907,
+    "borrow_apr": 0.11251511517770592,
+    "aust_rate": 1.2461602735013535,
+    "ust_supply": 18674000164.666317,
+    "ust_price": 0.9995876018071419,
+    "luna_price": 82.72951608283924,
+    "luna_supply": 749459806.5681263
+  },
+  "targets_rows": 959,
+  "missing_targets": {
+    "ust_price": 0,
+    "luna_price": 0,
+    "anchor_deposits": 0,
+    "luna_supply": 0,
+    "observed_withdraw": 0,
+    "observed_deposit": 0,
+    "native_ust": 0,
+    "native_fee": 383
+  },
+  "institutional_claim_ust": 1848208787.5637875,
+  "notes": [
+    "Micro-aUST in epoch_state divided by 1e6. Transaction amounts are already whole tokens.",
+    "Group observations are deposit/withdraw events, not aUST transfers.",
+    "First epoch_state at 00:14 UTC is used at 00:15; no backwards fill.",
+    "Full-window maximum wealth and realized loss are excluded from agent decisions.",
+    "Trading depth is not observed; it must be calibrated and tested for sensitivity."
+  ]
+}
